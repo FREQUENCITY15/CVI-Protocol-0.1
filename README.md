@@ -82,6 +82,24 @@ The laboratory verdict was **LAB NEEDS REFINEMENT**, and the report explicitly s
 
 That failed certification is the first demonstration of the protocol's intended discipline: **do not promote an interesting result into a stronger claim than the instrument can support.**
 
+## Citation
+
+If you use CVI Protocol 0.1 in research, evaluation, teaching, or derivative work, please cite **Thom Finlayson**. GitHub citation metadata is provided in [`CITATION.cff`](CITATION.cff).
+
+Suggested citation:
+
+> Thom Finlayson, *CVI Protocol 0.1: Causally Verified Intelligence*, version 0.1.0, 2026.
+
+## Licensing
+
+Licensing is intentionally scoped because this repository contains different kinds of material:
+
+- project-authored research and documentation: **CC BY 4.0**;
+- code under `experiments/reference-implementation/`: **MIT**;
+- preserved evidence and archives: retained for transparency and reproducibility, with no additional blanket reuse grant where rights or terms may differ.
+
+See [`LICENSE.md`](LICENSE.md) for the exact scope.
+
 ## Repository map
 
 ```text
@@ -92,6 +110,9 @@ CVI-Protocol-0.1/
 ├── INTERVENTION-GUIDE.md
 ├── GLOSSARY.md
 ├── CONTRIBUTING.md
+├── CITATION.cff
+├── LICENSE.md
+├── LICENSES/
 ├── PUBLISHING-NOTES.md
 ├── case-studies/
 ├── research/
@@ -107,4 +128,4 @@ Historical files are preserved as provenance. They may contain superseded framin
 **Protocol status:** provisional / pre-validation  
 **Empirical status:** no CVI capability claim has yet been certified by this project  
 **Novelty status:** **UNRESOLVED**; individual components have substantial precedent and this release does not claim invention of causal evaluation  
-**License status:** no public license has been selected yet; see `PUBLISHING-NOTES.md` before public release
+**License status:** scoped public licensing is defined in `LICENSE.md`
