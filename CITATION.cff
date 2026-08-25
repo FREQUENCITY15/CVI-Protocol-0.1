@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use CVI Protocol 0.1 in research, evaluation, teaching, or derivative work, please cite this repository."
+title: "CVI Protocol 0.1"
+authors:
+  - family-names: "Finlayson"
+    given-names: "Thom"
+version: "0.1.0"
+date-released: 2026-08-25
+repository-code: "https://github.com/FREQUENCITY15/CVI-Protocol-0.1"
+url: "https://github.com/FREQUENCITY15/CVI-Protocol-0.1"
+abstract: >-
+  A provisional open protocol for testing whether bounded AI capability
+  claims survive controlled feedback, competing explanations, retention
+  boundaries, transfer, and independent verification.
+keywords:
+  - artificial intelligence
+  - AI evaluation
+  - capability evaluation
+  - causal inference
+  - robustness
+  - retention
+  - transfer
+  - reproducible research
