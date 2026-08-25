@@ -1,0 +1,318 @@
+{
+  "S0": 0.75,
+  "arm_result": {
+    "anomalies": [],
+    "phase_calibration": {
+      "elapsed_s": 1.947,
+      "label": "cal_1_tier2",
+      "session_id": "CAL-calibration-1",
+      "tasks": {
+        "A-01": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                57
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                177
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                132
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                96
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                39
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                87
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                219
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SWIZZLE a b\nMUL a 3\nOUT a"
+        },
+        "A-02": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                80
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                203
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                37
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                172
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                235
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                211
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                160
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                114
+              ],
+              "passed": false
+            }
+          ],
+          "hidden_score": 0.0,
+          "program": "MIRROR a\nADD a 4\nOUT a"
+        },
+        "A-03": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                59
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                181
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                189
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                169
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                143
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                169
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                13
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                41
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SWIZZLE a b\nMUL a 2\nADD a 1\nOUT a"
+        },
+        "A-04": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                9,
+                16,
+                8
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                9,
+                20,
+                9
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                8,
+                3,
+                5
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                21,
+                1,
+                1
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                16,
+                20,
+                9
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                23,
+                12,
+                9
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                5,
+                1,
+                9
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                17,
+                2,
+                2
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SPLICE a b\nDRAIN"
+        }
+      }
+    },
+    "sessions": [
+      {
+        "input_tokens": 2106,
+        "output_tokens": 100,
+        "phase": "calibration",
+        "session_id": "CAL-calibration-1",
+        "turns": 1
+      }
+    ]
+  }
+}

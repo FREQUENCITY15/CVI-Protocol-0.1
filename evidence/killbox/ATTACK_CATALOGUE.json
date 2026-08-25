@@ -1,0 +1,285 @@
+{
+  "schema_version": "1.0",
+  "exercise": "CVI KILLBOX — adversarial falsification against the CVI experiment",
+  "project": "/Users/thomasfinlayson/Projects/CVI_Test_0/CVI-Pilot",
+  "date": "2026-08-19",
+  "method": "Five independent adversarial investigators plus primary-agent counterexamples, then prosecution (strengthen) and defence (attempt to defeat) stages, then a methodological judge.",
+  "classification_labels": {
+    "DEFEATED": "The existing experimental design already rules it out, with evidence.",
+    "SURVIVES": "A genuine alternative explanation remains possible.",
+    "TESTABLE": "The issue can be resolved with a specific additional control or experiment.",
+    "FATAL": "If the attack is valid, the current experimental result would not justify its intended interpretation."
+  },
+  "evidence_basis": {
+    "files_read": [
+      "cvi_lab/arms.py", "cvi_lab/grader.py", "cvi_lab/generator.py",
+      "cvi_lab/metrics.py", "cvi_lab/calibration.py", "cvi_lab/config.py",
+      "cvi_lab/participant.py", "cvi_lab/protocol.py", "cvi_lab/ordermachine.py",
+      "run_pilot.py", "tests/test_refinements.py", "tests/test_firewall.py",
+      "CVI_0_1_Pilot_Report.md", "CVI_0_Pilot_Report.md",
+      "CVI_First_Experiment.md", "CVI_Related_Work_Map.md"
+    ],
+    "artifacts_read": [
+      "runs/CVI-0.1_20260817T213225Z/{prompts,transcripts,submissions,environment_logs,scores.json,metrics.json,protocol.json}",
+      "runs/CVI-0_20260817T200229Z/{scores.json,pilot_report.md}"
+    ]
+  },
+  "attacks": [
+    {
+      "id": "A16",
+      "title": "Full operator semantics AND the expression-quirk trap are disclosed verbatim in the system prompt on every call",
+      "area": "answer-format leakage; environmental feedback that gives away answers; no causal inference required",
+      "evidence": [
+        "ordermachine.py:637-735 PARTICIPANT_SPEC is handed to the model as the system prompt on EVERY participant call (arms.py:221-227 build_system_prompt(om.PARTICIPANT_SPEC)).",
+        "ordermachine.py:718-719: '`MIRROR a + 1` means MIRROR of (a + 1). To add 1 after mirroring, write `(MIRROR a) + 1`' — the exact answer structure for the hardest trap (A-02/C-02 canonical is 'OUT (MIRROR a) + 2').",
+        "ordermachine.py:684: '...no register is modified' states the entire purity-trap rule that the CVI-0/CVI-0.1 pilots identified as the dominant failure mechanism.",
+        "submissions/S/B-*.om: the no-feedback S arm writes the exact canonical programs at transfer from the spec alone."
+      ],
+      "counterexample": "A no-feedback arm (S) already writes the canonical program at transfer purely by reading the disclosed spec. The tasks therefore measure spec comprehension / instruction-following, not causal inference; Arm C's interaction is mechanically irrelevant to acquiring the mapping, which is present in every arm's system prompt.",
+      "prediction": "Ablating the semantics/trap text from PARTICIPANT_SPEC (leaving only names/arity) collapses S0/S_tr toward chance for the no-feedback arm; without that ablation, S_tr stays at ceiling for all arms regardless of treatment.",
+      "discriminating_test": "Two-arm ablation: (i) spec with semantics but NO worked examples vs (ii) worked examples but NO semantics. If (ii) > (i) on hidden, tasks measure data-driven inference; if (i) > (ii), they measure instruction-following and 'causal interaction' is irrelevant.",
+      "classification": "SURVIVES",
+      "evidence_level": "OBSERVED"
+    },
+    {
+      "id": "A17",
+      "title": "Arms run in a fixed order (S -> S' -> C) with no randomization, and 'fresh session' is not verified against server-side prompt-cache reuse, so the baseline split may be positional/cache-state",
+      "area": "contamination between phases; unequal token/opportunity budgets; calibration/matching bias",
+      "evidence": [
+        "run_pilot.py:422-440: arm_pre is a fixed dict iterated S -> S_PRIME -> C; no randomization of arm order.",
+        "CVI_0_1_Pilot_Report.md anomaly 6: baseline input tokens were 820 for S (run first, 'cold') vs 52 for S'/C (server-side prompt cache already warm). Verified per-call in api_usage.json: S baseline in=820/cache_read=1280, S' baseline in=52/cache_read=2048, C baseline in=52/cache_read=2048; identical pattern on hidden (S 826 vs S' 58 vs C 58).",
+        "participant.py has no control over the provider cache; 'fresh session' resets the client message list (arms.py:139-153) but not the provider computation.",
+        "The 0.25 / 1.00 / 0.25 baseline split therefore cannot be distinguished from a positional/cache-state artifact on this evidence."
+      ],
+      "counterexample": "Because S always runs first (cold) and S'/C after (warm), and the cache state and API-order differ, the bimodal baseline could be a run-order / cache artifact rather than model capability. Any between-arm baseline difference inherits this without randomization.",
+      "prediction": "Randomizing arm order (or running each arm in a fresh cold context) changes the observed S0 spread.",
+      "discriminating_test": "Randomize arm order across participants and/or force a cache-break token per call; test whether the S0 0.25/1.00/0.25 split persists.",
+      "classification": "TESTABLE",
+      "evidence_level": "OBSERVED (order and cache accounting); UNRESOLVED (causal role)"
+    },
+    {
+      "id": "A18",
+      "title": "Accountability/engagement prime ('there will be an external check') is not isolated from the verdict itself",
+      "area": "prompt asymmetry; self-critique effect confused with causal-intervention effect",
+      "evidence": [
+        "arms.py:473-476 C is told 'your programs will be run ... you will receive the outcomes, after which you may revise' (accountability + external check framing).",
+        "arms.py:387-389 S' is told 'You will work in a private scratchpad. You will receive NO test results of any kind — you must judge your own work.'",
+        "No arm receives the C 'external check' accountability framing but no verdict; so the engagement/accountability component of C's framing is never separated from the causal-verdict content."
+      ],
+      "counterexample": "An arm 'S-accountable' told 'your programs will be evaluated against the worked examples after you submit' and then simply asked to re-attempt (no verdict) could capture the engagement/accountability component without any feedback; S' is primed the opposite way, so C's apparent advantage bundles framing + verdict.",
+      "prediction": "Part of any C advantage on S_post is an engagement/accountability effect from the framing, separable from feedback content.",
+      "discriminating_test": "A 2x2 (verdict given/withheld) x (accountable framing / neutral) isolates the framing term; or A/B the S' heading holding everything else fixed.",
+      "classification": "SURVIVES",
+      "evidence_level": "OBSERVED (text asymmetry); INFERRED (causal role)"
+    },
+    {
+      "id": "A1",
+      "title": "No-feedback derivability: the Family-A answer is present in every arm's shared prompt",
+      "area": "environmental feedback that gives away answers without causal learning; answer-format leakage",
+      "evidence": [
+        "arms.py:88-101 build_batch_prompt injects task.public_view() (description + 4 public examples, inputs AND expected outputs) verbatim into EVERY arm's baseline/retention/transfer/hidden prompt.",
+        "grader.py:77-91 C's only feedback is 'case N: PASS/FAIL (wrong output|error)', never the output value; the expected outputs are already in the prompt.",
+        "COUNTEREXAMPLES/ce_no_feedback_solve.py (runnable): a solver using only the shared public examples + spec reaches hidden_score=1.0 on ALL four Family-A tasks.",
+        "arms.py:78-79 the system prompt tells every arm it 'cannot execute code'; arms.py:485-512 then has the harness EXECUTE C's program and return verdicts, while arms.py:388-389 tells S' 'You will receive NO test results of any kind' and its program is never executed. This is a compute/tool asymmetry: C has an executor+verifier oracle, S' has none (the discriminating test below separates the oracle from the causal link)."
+      ],
+      "counterexample": "A no-feedback agent (like S') produces 'OUT (SWIZZLE a b) * 2'; passes every public+hidden case for A-01..A-04, hidden_score 1.0. A no-feedback arm can tie or beat Arm C's actual S_post=0.75 without any verdict. Two students with the same worked-solution homework: C may run its code against the worked answers and is told pass/fail each iteration; S' may not run anything. C improves by trial-and-error against the answer key; zero causal understanding required.",
+      "prediction": "A 'sham S'' that merely emits canonical-style programs from the examples (no verdict, no execution) scores >= C on the interaction phase. C's S_post gains are confined to (a) tasks where 'wrong output' + a visible expected output permits local idiom search, and (b) idioms the model already samples correctly elsewhere (S' wrote the correct 'SET c SWIZZLE a b / MUL c 2 / OUT c' at its own baseline). No gain on tasks needing real semantic inference (MIRROR, where C failed all 3 rounds).",
+      "discriminating_test": "Add arm S'' that is given the prompt content + R=3 rounds to emit a program, never executed, with no critique loop; compare S'' vs C on the same tasks. Also give S' the exact same executor oracle but relabel it 'self-check tool (not environment feedback)' with identical per-case PASS/FAIL, and give C feedback redacted to 'at least one case failed' (no per-case breakdown); if C > S' collapses or reverses, the S_post effect is the verifier/compute, not the causal contingency.",
+      "classification": "SURVIVES",
+      "evidence_level": "OBSERVED"
+    },
+    {
+      "id": "A2",
+      "title": "Sham verdict: 'causal contingency' is confounded with 'you are told you are wrong'",
+      "area": "sham-treatment challenge; causal contingency of interaction",
+      "evidence": [
+        "arms.py:464-546 run_arm_c_pre executes the agent's OWN program and returns PASS/FAIL; arms.py:384-448 run_arm_sprime_pre gives S' no verdict at all.",
+        "COUNTEREXAMPLES/ce_sham_verdict_redundant.py (runnable): every wrong-idiom program the model emits yields the SAME verdict 'FAIL (wrong output)' on all 4 public cases, so the verdict is a fixed string independent of which wrong program ran.",
+        "environment_logs/C/A-01/round_00.json: all four failures are error_class null => total 'wrong output'."
+      ],
+      "counterexample": "A sham that replays the identical 'ENVIRONMENT FEEDBACK ... case N: FAIL (wrong output)' strings WITHOUT running the participant's program is informationally indistinguishable to the model and reproduces the same in-session correction and the same cross-context reversion.",
+      "prediction": "A non-contingent-verdict sham reproduces C's S_post and S_ret on these tasks.",
+      "discriminating_test": "2x2 factorial: verdict (given / withheld) x contingency (feedback caused by the participant's own program / generated independently). The design currently has only (given, contingent) and (withheld, n/a).",
+      "classification": "SURVIVES"
+    },
+    {
+      "id": "A3",
+      "title": "S' is a damaged / inert control, not 'equal-budget private reasoning'",
+      "area": "accidental handicap on S'; self-critique effects confused with causal-intervention effects",
+      "evidence": [
+        "S' baseline scored 1.00 then critique round-0 re-drew the wrong value-discard idiom (submissions/S_PRIME/A-01/), and rounds 1-3 emitted byte-identical text (transcripts/S_PRIME/critique/*) — a dead loop that changes nothing.",
+        "arms.py:378-406 run_arm_sprime_pre: Phase-0 baseline runs in its OWN session, then a FRESH 'critique' session calls build_batch_prompt(tasks, heading) for round_0 — the baseline programs are NEVER re-presented to the critique session. So round_0 is an independent one-shot draw, not a critique of the baseline; the 'self-critique destroyed correct answers' account (CVI_0_1_Pilot_Report.md:296) is a misattribution of two independent bimodal draws.",
+        "S_0(C)=0.25, S_0(S')=1.00 on byte-identical prompts (report §4): the baseline spread is a bimodal-sampling artifact, not a controlled baseline match.",
+        "metrics.py:127 G_F(S')=0.0 (its regression hidden by the max(0,..) clamp)."
+      ],
+      "counterexample": "Because S' critique degrades/freezes correct answers, C beats S' merely by not breaking them; any C>S' on S_post reflects S''s incapacitation, not a causal-learning advantage.",
+      "prediction": "An S' variant that is asked to produce a single best attempt (no destructive 'judge your own work' loop) scores at or above C.",
+      "discriminating_test": "Compare the current S' to an S' that performs N parallel one-shot attempts and keeps the best (no revision interaction).",
+      "classification": "SURVIVES"
+    },
+    {
+      "id": "A4",
+      "title": "Transfer saturates to ceiling; a no-feedback arm solves S3 novel-composition tasks",
+      "area": "difficulty imbalance; transfer tasks solvable by pattern matching rather than transferred causal structure; metric design artifact",
+      "evidence": [
+        "S_tr = 1.000 for all arms in both CVI-0 and CVI-0.1 (18/18 B instances solved by every arm).",
+        "submissions/S/B-S3-*: S solved the novel-composition S3 rungs (FOLD/HELIX, HELIX/DRAIN) with ZERO interaction.",
+        "calibration.py:227-253 n=2 mean rule accepted the unstable {1.000,0.333} split; official batch saturated."
+      ],
+      "counterexample": "S (no feedback, no revisions) reaches S_tr=1.0 on the literal transfer rungs, so S_tr carries zero information about whether interaction teaches anything.",
+      "prediction": "Any future C>S' S_tr gap will be driven by batch-context idiom selection, not by durable transfer, because S already ceilings.",
+      "discriminating_test": "Calibrate Family B so a no-feedback arm (S) scores ~0.3-0.7 before comparing arms.",
+      "classification": "SURVIVES"
+    },
+    {
+      "id": "A5",
+      "title": "Baseline matching is defeated by response bimodality, so the §18 'approximately equal static performance' premise is not met",
+      "area": "calibration / matching bias; unequal information between arms",
+      "evidence": [
+        "S0 = 0.25 / 1.00 / 0.25 for S / S' / C on byte-identical hash-enforced prompts (report §4, §9 anomaly 1).",
+        "Single-shot baseline scores 0.25, 0.75, 1.00 across calibration draws of the same tier (CVI-0 §6)."
+      ],
+      "counterexample": "The arms are not reliably matched at static capability; any between-arm transfer/hidden difference could be an artifact of which bimodal idiom a given treatment session tends to elicit, not of causal learning.",
+      "prediction": "Repeated baseline draws under identical prompts yield a bimodal distribution {0.25, 1.00} rather than a stable matching score.",
+      "discriminating_test": "Average baseline over multiple independent one-shot draws per participant before forming strata; or use a seeding-capable endpoint.",
+      "classification": "SURVIVES"
+    },
+    {
+      "id": "A6",
+      "title": "Retention-ratio M is algebraically broken and can yield a false 'pass' (M=1.0) for a zero-learning arm",
+      "area": "calibration artifact; metric design artifact",
+      "evidence": [
+        "metrics.py:129-135 retention_ratio = 1 - (S0-S_ret)/(S0-F_after) with F_after=1-S_post; reduces to 1-(S0-S_ret)/(S0+S_post-1).",
+        "For the pilot: M(C)=null (S0-F_after=0) while M(S')=-2.0; an arm with S0=S_post=S_ret yields M=1.0 (a false pass of the design's M>=0.7 gate)."
+      ],
+      "counterexample": "Verified numerically: an inert arm with S0=S_post=S_ret=0.30 yields M=1.0 (a false pass of the design's M>=0.7 gate); a fully-retained arm S0=0.3,S_post=0.8,S_ret=0.8 yields M=6.0 (unbounded); and C's pilot case (0.25 -> 0.75 -> 0.25) yields M=null (the exact 'corrected then lost it' scenario the metric must catch is silent). The natural retention fraction (S_ret-S0)/(S_post-S0) gives 0.0 for C and undefined for a truly inert arm.",
+      "prediction": "M does not track actual retention; it tracks the algebraic denominator. C's retention gate is vacated exactly when C makes-then-loses a correction, while S' gets a pathological negative (-2.0).",
+      "discriminating_test": "Replace M with the natural retention fraction (S_ret-S0)/(S_post-S0); unit tests asserting S0=S_post=S_ret=0.3 => M==0.0 (currently returns 1.0) and S0=0.3,S_post=0.8,S_ret=0.8 => M==1.0 (currently returns 6.0).",
+      "classification": "SURVIVES"
+    },
+    {
+      "id": "A7",
+      "title": "G_F is anchored at Phase-1 round-0 (not the baseline environmental failure) and hides S''s regression",
+      "area": "metric design artifact; self-critique effect conflated with causal response",
+      "evidence": [
+        "metrics.py:105-111 anchors F_before at Phase-1 round-0 hidden score, not the Phase-0 baseline where the environmental failure was demonstrated.",
+        "The design's signed G_F (CVI_First_Experiment.md §4) is never computed; only the max(0,..) clamp (metrics.py:123) is, so S''s -0.75 regression is reported as 0.0."
+      ],
+      "counterexample": "G_F(C)=0.667 measures 'improvement across revision rounds within the interactive session', not 'resolution of a demonstrated environmental failure'; S' gets a G_F at all despite never observing any failure. S''s true trajectory is a -0.75 regression (baseline 1.00 -> critique round-0 0.25 -> round-3 0.25), but the max(0,..) clamp plus the round-0 anchor report G_F(S')=0.0, hiding the regression. Additionally, the design's §6.2 gate ('G_F > 0 on >=80% of failure episodes') is NOT met: C resolved 2/3 failing tasks (66.7%), yet the displayed 'G_F mean 0.667' is a mean magnitude that reads as moderate success.",
+      "prediction": "G_F values do not distinguish causal resolution from in-context revision; S' (no environment) reports 0.0, not 'undefined'. C is structurally rewarded for recovering from failures it re-commits at round-0, inflating any head-to-head G_F display.",
+      "discriminating_test": "Compute signed and baseline-anchored G_F; assert S0=1.0, round-0=0.0, round-3=0.0 => G_F(S')<0 (currently returns 0.0); and require G_F=null for arms without environment feedback; additionally report whether the §6.2 '>=80% of episodes' gate is met rather than the mean.",
+      "classification": "SURVIVES"
+    },
+    {
+      "id": "A8",
+      "title": "The 'token-matched S'/C' control is not actually implemented",
+      "area": "unequal token / computation / opportunity budgets",
+      "evidence": [
+        "No per-task or per-arm token cap exists; only global runaway guards config.py:57-59.",
+        "Observed interaction tokens: C in=1585/out=403 vs S' critique in=1490/out=380 (C slightly advantaged); S gets 5 calls vs 9 for S'/C.",
+        "Server prompt-cache skews accounting (S baseline 820 input vs 52 for S'/C on identical prompts)."
+      ],
+      "counterexample": "C's extra effective compute (larger interaction context, more fresh-computation tokens) could produce an advantage with no causal mechanism.",
+      "prediction": "Differences in effective per-task compute across arms correlate with any observed C advantage.",
+      "discriminating_test": "Enforce a deterministic token cap per task per arm and log effective (post-cache) tokens; report C and S' under identical budgets.",
+      "classification": "SURVIVES"
+    },
+    {
+      "id": "A9",
+      "title": "Hidden-verification Family C is Family A re-issued (same recipes, same spec), so it re-tests memorised templates rather than independent causal structure",
+      "area": "hidden verifier leakage; memorisation; transfer re-testing shortcuts",
+      "evidence": [
+        "generator.py:874-883 generate_family_c = generate_family_a(..., spec=spec); run_pilot.py:468 passes the same calibrated spec as Family A.",
+        "family_c.json canonical programs/descriptions byte-identical to family_a.json; C-02 has the same purity_trap=true as A-02.",
+        "S_ver = S0 = S_ret = 0.25 for every arm, and every arm emitted the identical wrong value-discard idiom at baseline, retention, and hidden."
+      ],
+      "counterexample": "'Hidden verification' re-tests the same 4 recipe templates with fresh random cases. A model that has memorised 'which idiom is correct for these 4 templates' (e.g., from Family A interaction) passes C without any generalised causal structure.",
+      "prediction": "S_ver tracks the Family-A idiom-choice, not a generalised capability; it equals S0 because the same templates recur.",
+      "discriminating_test": "Generate Family C from recipes NOT in Family A (structurally different), or with novel operator compositions, and verify keys are independently hidden.",
+      "classification": "SURVIVES"
+    },
+    {
+      "id": "A10",
+      "title": "Transfer rungs S1/S2 are duplicates/renames and S3 is a template swap, not structural generalisation",
+      "area": "transfer tasks solvable using shortcuts rather than transferred causal structure; correlated cues",
+      "evidence": [
+        "generator.py:838-846 S1 reuses Family-A params AND cases (B-S1-01 cases == A-01 cases).",
+        "generator.py:851-862 S2 'novel parameter' keeps k=2 with only register renames a/b -> c/d (seeds.json).",
+        "All canonical programs share one skeleton 'OUT (NOVEL_OP ...) * k + m' or 'PUSH (NOVEL_OP ...) + k / DRAIN'; S3 swaps operator tokens into the same skeleton."
+      ],
+      "counterexample": "A model that learned the single 'parenthesise the novel op and wrap in OUT/PUSH' template solves every B rung; this is template re-application, not generalisation to altered-but-related structure.",
+      "prediction": "S_tr is high for the no-feedback arm S (observed 1.0) precisely because the rungs are template re-applications.",
+      "discriminating_test": "Add a genuine S4 rung (different operand structure / modality) that is NOT solvable by the A-template; require C to transfer there.",
+      "classification": "SURVIVES"
+    },
+    {
+      "id": "A11",
+      "title": "Gaming index is vacuous because public and hidden cases are drawn i.i.d. from the same stream",
+      "area": "calibration artifact; hidden verifier weakness",
+      "evidence": [
+        "generator.py:628-629 public (4) and hidden (8) cases are all drawn from one recipe.draw_inputs stream, so a program that passes all public cases almost always passes hidden.",
+        "Observed gaming rate = 0.0; public_all_pass ~ hidden_score=1.0 for the canonical programs."
+      ],
+      "counterexample": "With IID public/hidden draws, 'no gaming' is a near-tautology; it cannot detect a model that over-fitted the few visible examples if the hidden cases are from the same distribution.",
+      "prediction": "Gaming index stays ~0 for any program passing public in these recipes, carrying no information.",
+      "discriminating_test": "Draw hidden cases from a distribution that can differ from public (e.g., extreme-regime inputs, adversarial perturbations) so gaming is measurable.",
+      "classification": "SURVIVES"
+    },
+    {
+      "id": "A12",
+      "title": "Calibration selection is enumeration-order theater and uses the same model as the official run",
+      "area": "calibration / selection bias",
+      "evidence": [
+        "calibration.py:149-215 accepts the FIRST spec (of 54 predicted at 0.75) whose predicted family S0 is in [0.30,0.80]; mirror_add=0.0 and the other three recipes=1.0 in every stratum, so all specs predict 0.75 and the selection is order-based.",
+        "The predicted 0.75 missed the official model S0 of 0.25/1.00/0.25.",
+        "run_pilot.py:107-124 uses the SAME pinned model for calibration and the official run, over-fitting selection to that model's idiom behaviour."
+      ],
+      "counterexample": "Selection picks tasks that are recipe-degenerate (whole recipes unsolvable or trivially solvable for the calibration model), producing a 'band' that predicts nothing about whether interaction helps, while guaranteeing the same model's idiom quirks recur in the official run.",
+      "prediction": "Re-running calibration on a different model would select a different (equally 'in-band') spec, showing the selection carries no task difficulty signal.",
+      "discriminating_test": "Cross-validate: select tasks on model A, score on held-out model B; and require per-recipe difficulty (not family average) to be in band.",
+      "classification": "SURVIVES"
+    },
+    {
+      "id": "A13",
+      "title": "Treatment framing asymmetry primes C toward agency/correctness and S' toward self-doubt",
+      "area": "prompt asymmetry; self-critique effect being confused with causal-intervention effect",
+      "evidence": [
+        "arms.py:473-476 C: 'After you submit, your programs will be run ... you will receive the outcomes, after which you may revise.'",
+        "arms.py:387-389 S': 'You will work in a private scratchpad. You will receive NO test results ... you must judge your own work.'",
+        "Transcript showing S' re-affirmed its wrong answer 3 times and C revised once the verdict prompted agency."
+      ],
+      "counterexample": "The wording alone ('your work will be checked' vs 'judge your own work') may change which idiom the model emits and how much it revises, independent of any real feedback contingency.",
+      "prediction": "Two arms receiving identical verdicts but L1/C-style vs self-doubt framing would diverge on S_post purely from framing.",
+      "discriminating_test": "Neutralize framing: give both C and S' identical task-round wording and keep only the actual verdict/no-verdict difference.",
+      "classification": "SURVIVES"
+    },
+    {
+      "id": "A14",
+      "title": "'Fresh session' is not verified against server-side prompt-cache reuse",
+      "area": "contamination between phases; retention-in-context leakage",
+      "evidence": [
+        "Observed baseline prompt cached across arms (52 vs 820 input tokens; report §9 anomaly 6).",
+        "The client (participant.py) has no control over the provider's cache; 'fresh session' resets the client message list but not the provider cache."
+      ],
+      "counterexample": "Server-side caching/context could leak system-prompt-state or prior-phase state across nominal phase boundaries, contaminating the retention test.",
+      "prediction": "Phase outcomes could partially reflect provider cache/context reuse, not the agent's own retained state.",
+      "discriminating_test": "Record and inspect cache_read_tokens per phase per arm; if phase-1 material is served from cache into phase 2, flag leakage.",
+      "classification": "TESTABLE"
+    },
+    {
+      "id": "A15",
+      "title": "The observed pattern already satisfies the experiment's own falsification branch (no retention, no transfer separation)",
+      "area": "overall interpretation; whether the intended CVI account is supported at all",
+      "evidence": [
+        "S_ret = 0.25 = S0 for all arms; C's retention program byte-identical to its baseline (C/A-01 reversed), S_tr=1.0 all, S_ver=0.25 all.",
+        "CVI_First_Experiment.md:88-90 lists 'C > S' at Phase 1 but S_ret ~= S0 -> no retention; in-context patchwork' as a falsification branch, which the data exhibit.",
+        "CVI_0_1_Pilot_Report.md concludes 'no CVI claim is made or supported here' and 'LAB NEEDS REFINEMENT'."
+      ],
+      "counterexample": "The only arm separation (S_post C=0.75 vs S'=0.25) is exactly the in-session feedback effect the design declares insufficient for CVI; it does not move S_tr/S_ver. Moreover the design's §6.2 G_F gate ('G_F > 0 on >=80% of failure episodes') is not met (C resolved 2/3 episodes = 66.7%), and the M>=0.7 retention gate is null for C, so several pre-committed support criteria fail in addition to no arm separation on the primary DVs.",
+      "prediction": "Any reading of the pilot as CVI support is contradicted by the design's own criteria.",
+      "discriminating_test": "Apply the design's own §6 supporting/criteria jointly to the pilot data; they fail on retention, the G_F episode gate, and transfer headroom.",
+      "classification": "SURVIVES"
+    }
+  ],
+  "headline": "The primary predicted pattern C > S' >= S on transfer and hidden verification (the outcome the CVI claim must move) did NOT occur in either pilot. Both pilots show no arm separation on S_tr (ceiling 1.0), S_ver (uniform), and S_ret (uniform, equal to S0). The only separation is S_post (within-session feedback), which the design's own criterion #2 declares 'in-context patchwork'. Several uncontrolled simpler mechanisms could nonetheless produce an apparent C > S' >= S on those legs in a future run: S' is a damaged/inert control, no-feedback derivability of the answers, the causal-contingency being confounded with 'you are told you are wrong', broken baseline matching, and unsolved/low-headroom transfer rungs. The design therefore cannot currently distinguish the intended CVI interpretation from these alternatives without additional controls."
+}

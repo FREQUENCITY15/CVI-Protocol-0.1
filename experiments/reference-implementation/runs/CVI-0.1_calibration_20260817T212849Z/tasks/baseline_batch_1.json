@@ -1,0 +1,2290 @@
+[
+  {
+    "canonical_program": "OUT (SWIZZLE a b) * 2",
+    "case_seed": 16848229790149418621,
+    "description": "Read registers a and b. Apply SWIZZLE to the pair (a, b). Take the value that SWIZZLE produces and multiply it by 2. Output the result.",
+    "difficulty": {
+      "features": {
+        "arith_op_count": 1,
+        "multi_statement": false,
+        "n_hidden_cases": 8,
+        "n_novel_op_tokens": 1,
+        "n_novel_ops": 1,
+        "n_public_cases": 4,
+        "nested_novel_expression": false,
+        "novel_ops": [
+          "SWIZZLE"
+        ],
+        "params": {
+          "k": 2,
+          "r1": "a",
+          "r2": "b"
+        },
+        "phrasing": 1,
+        "purity_trap": false,
+        "recipe": "swizzle_mul",
+        "starts_with_out": true,
+        "uses_queue_ops": false
+      },
+      "generator_version": "1.1.0",
+      "naive_discrimination": {
+        "hidden_fails": 8,
+        "public_fails": 4
+      },
+      "stratum_key": "swizzle_mul[k=2][phr=1]"
+    },
+    "family": "CAL",
+    "hidden_cases": [
+      {
+        "case_id": 5,
+        "expected_output": [
+          38
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 117,
+            "b": 20
+          }
+        }
+      },
+      {
+        "case_id": 6,
+        "expected_output": [
+          174
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 220,
+            "b": 88
+          }
+        }
+      },
+      {
+        "case_id": 7,
+        "expected_output": [
+          92
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 68,
+            "b": 47
+          }
+        }
+      },
+      {
+        "case_id": 8,
+        "expected_output": [
+          60
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 26,
+            "b": 31
+          }
+        }
+      },
+      {
+        "case_id": 9,
+        "expected_output": [
+          210
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 171,
+            "b": 106
+          }
+        }
+      },
+      {
+        "case_id": 10,
+        "expected_output": [
+          6
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 211,
+            "b": 4
+          }
+        }
+      },
+      {
+        "case_id": 11,
+        "expected_output": [
+          94
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 110,
+            "b": 48
+          }
+        }
+      },
+      {
+        "case_id": 12,
+        "expected_output": [
+          28
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 7,
+            "b": 15
+          }
+        }
+      }
+    ],
+    "naive_program": "OUT SWIZZLE a b * 2",
+    "params": {
+      "k": 2,
+      "r1": "a",
+      "r2": "b"
+    },
+    "phrasing": 1,
+    "public_cases": [
+      {
+        "case_id": 1,
+        "expected_output": [
+          96
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 4,
+            "b": 49
+          }
+        }
+      },
+      {
+        "case_id": 2,
+        "expected_output": [
+          38
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 242,
+            "b": 20
+          }
+        }
+      },
+      {
+        "case_id": 3,
+        "expected_output": [
+          88
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 92,
+            "b": 45
+          }
+        }
+      },
+      {
+        "case_id": 4,
+        "expected_output": [
+          50
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 143,
+            "b": 26
+          }
+        }
+      }
+    ],
+    "recipe": "swizzle_mul",
+    "seed": 4590785281375439319,
+    "subfamily": "baseline_stratum",
+    "task_id": "CAL-001",
+    "tier": 2
+  },
+  {
+    "canonical_program": "OUT (SWIZZLE a b) * 3",
+    "case_seed": 4201628280427552074,
+    "description": "Read registers a and b. Apply SWIZZLE to the pair (a, b). Take the value that SWIZZLE produces and multiply it by 3. Output the result.",
+    "difficulty": {
+      "features": {
+        "arith_op_count": 1,
+        "multi_statement": false,
+        "n_hidden_cases": 8,
+        "n_novel_op_tokens": 1,
+        "n_novel_ops": 1,
+        "n_public_cases": 4,
+        "nested_novel_expression": false,
+        "novel_ops": [
+          "SWIZZLE"
+        ],
+        "params": {
+          "k": 3,
+          "r1": "a",
+          "r2": "b"
+        },
+        "phrasing": 1,
+        "purity_trap": false,
+        "recipe": "swizzle_mul",
+        "starts_with_out": true,
+        "uses_queue_ops": false
+      },
+      "generator_version": "1.1.0",
+      "naive_discrimination": {
+        "hidden_fails": 8,
+        "public_fails": 4
+      },
+      "stratum_key": "swizzle_mul[k=3][phr=1]"
+    },
+    "family": "CAL",
+    "hidden_cases": [
+      {
+        "case_id": 5,
+        "expected_output": [
+          9
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 49,
+            "b": 4
+          }
+        }
+      },
+      {
+        "case_id": 6,
+        "expected_output": [
+          105
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 214,
+            "b": 36
+          }
+        }
+      },
+      {
+        "case_id": 7,
+        "expected_output": [
+          72
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 21,
+            "b": 25
+          }
+        }
+      },
+      {
+        "case_id": 8,
+        "expected_output": [
+          45
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 150,
+            "b": 16
+          }
+        }
+      },
+      {
+        "case_id": 9,
+        "expected_output": [
+          216
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 5,
+            "b": 73
+          }
+        }
+      },
+      {
+        "case_id": 10,
+        "expected_output": [
+          90
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 128,
+            "b": 31
+          }
+        }
+      },
+      {
+        "case_id": 11,
+        "expected_output": [
+          243
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 30,
+            "b": 82
+          }
+        }
+      },
+      {
+        "case_id": 12,
+        "expected_output": [
+          51
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 5,
+            "b": 18
+          }
+        }
+      }
+    ],
+    "naive_program": "OUT SWIZZLE a b * 3",
+    "params": {
+      "k": 3,
+      "r1": "a",
+      "r2": "b"
+    },
+    "phrasing": 1,
+    "public_cases": [
+      {
+        "case_id": 1,
+        "expected_output": [
+          48
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 11,
+            "b": 17
+          }
+        }
+      },
+      {
+        "case_id": 2,
+        "expected_output": [
+          105
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 77,
+            "b": 36
+          }
+        }
+      },
+      {
+        "case_id": 3,
+        "expected_output": [
+          102
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 131,
+            "b": 35
+          }
+        }
+      },
+      {
+        "case_id": 4,
+        "expected_output": [
+          15
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 75,
+            "b": 6
+          }
+        }
+      }
+    ],
+    "recipe": "swizzle_mul",
+    "seed": 2607861946303059382,
+    "subfamily": "baseline_stratum",
+    "task_id": "CAL-002",
+    "tier": 2
+  },
+  {
+    "canonical_program": "OUT (SWIZZLE a b) * 5",
+    "case_seed": 6033836726876354542,
+    "description": "Read registers a and b. Apply SWIZZLE to the pair (a, b). Take the value that SWIZZLE produces and multiply it by 5. Output the result.",
+    "difficulty": {
+      "features": {
+        "arith_op_count": 1,
+        "multi_statement": false,
+        "n_hidden_cases": 8,
+        "n_novel_op_tokens": 1,
+        "n_novel_ops": 1,
+        "n_public_cases": 4,
+        "nested_novel_expression": false,
+        "novel_ops": [
+          "SWIZZLE"
+        ],
+        "params": {
+          "k": 5,
+          "r1": "a",
+          "r2": "b"
+        },
+        "phrasing": 1,
+        "purity_trap": false,
+        "recipe": "swizzle_mul",
+        "starts_with_out": true,
+        "uses_queue_ops": false
+      },
+      "generator_version": "1.1.0",
+      "naive_discrimination": {
+        "hidden_fails": 8,
+        "public_fails": 4
+      },
+      "stratum_key": "swizzle_mul[k=5][phr=1]"
+    },
+    "family": "CAL",
+    "hidden_cases": [
+      {
+        "case_id": 5,
+        "expected_output": [
+          210
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 73,
+            "b": 43
+          }
+        }
+      },
+      {
+        "case_id": 6,
+        "expected_output": [
+          155
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 115,
+            "b": 32
+          }
+        }
+      },
+      {
+        "case_id": 7,
+        "expected_output": [
+          120
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 247,
+            "b": 25
+          }
+        }
+      },
+      {
+        "case_id": 8,
+        "expected_output": [
+          130
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 32,
+            "b": 27
+          }
+        }
+      },
+      {
+        "case_id": 9,
+        "expected_output": [
+          120
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 79,
+            "b": 25
+          }
+        }
+      },
+      {
+        "case_id": 10,
+        "expected_output": [
+          240
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 40,
+            "b": 49
+          }
+        }
+      },
+      {
+        "case_id": 11,
+        "expected_output": [
+          145
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 189,
+            "b": 30
+          }
+        }
+      },
+      {
+        "case_id": 12,
+        "expected_output": [
+          150
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 154,
+            "b": 31
+          }
+        }
+      }
+    ],
+    "naive_program": "OUT SWIZZLE a b * 5",
+    "params": {
+      "k": 5,
+      "r1": "a",
+      "r2": "b"
+    },
+    "phrasing": 1,
+    "public_cases": [
+      {
+        "case_id": 1,
+        "expected_output": [
+          240
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 223,
+            "b": 49
+          }
+        }
+      },
+      {
+        "case_id": 2,
+        "expected_output": [
+          70
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 125,
+            "b": 15
+          }
+        }
+      },
+      {
+        "case_id": 3,
+        "expected_output": [
+          5
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 206,
+            "b": 2
+          }
+        }
+      },
+      {
+        "case_id": 4,
+        "expected_output": [
+          195
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 200,
+            "b": 40
+          }
+        }
+      }
+    ],
+    "recipe": "swizzle_mul",
+    "seed": 7835661526507529870,
+    "subfamily": "baseline_stratum",
+    "task_id": "CAL-003",
+    "tier": 2
+  },
+  {
+    "canonical_program": "OUT (MIRROR a) + 2",
+    "case_seed": 7147651345579254322,
+    "description": "Read register a. Apply MIRROR to it. Add 2 to the value that MIRROR produces. Output the result.",
+    "difficulty": {
+      "features": {
+        "arith_op_count": 1,
+        "multi_statement": false,
+        "n_hidden_cases": 8,
+        "n_novel_op_tokens": 1,
+        "n_novel_ops": 1,
+        "n_public_cases": 4,
+        "nested_novel_expression": false,
+        "novel_ops": [
+          "MIRROR"
+        ],
+        "params": {
+          "k": 2,
+          "r1": "a"
+        },
+        "phrasing": 1,
+        "purity_trap": true,
+        "recipe": "mirror_add",
+        "starts_with_out": true,
+        "uses_queue_ops": false
+      },
+      "generator_version": "1.1.0",
+      "naive_discrimination": {
+        "hidden_fails": 8,
+        "public_fails": 4
+      },
+      "stratum_key": "mirror_add[k=2][phr=1]"
+    },
+    "family": "CAL",
+    "hidden_cases": [
+      {
+        "case_id": 5,
+        "expected_output": [
+          36
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 132
+          }
+        }
+      },
+      {
+        "case_id": 6,
+        "expected_output": [
+          244
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 143
+          }
+        }
+      },
+      {
+        "case_id": 7,
+        "expected_output": [
+          37
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 68
+          }
+        }
+      },
+      {
+        "case_id": 8,
+        "expected_output": [
+          202
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 227
+          }
+        }
+      },
+      {
+        "case_id": 9,
+        "expected_output": [
+          222
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 219
+          }
+        }
+      },
+      {
+        "case_id": 10,
+        "expected_output": [
+          120
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 174
+          }
+        }
+      },
+      {
+        "case_id": 11,
+        "expected_output": [
+          134
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 193
+          }
+        }
+      },
+      {
+        "case_id": 12,
+        "expected_output": [
+          211
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 11
+          }
+        }
+      }
+    ],
+    "naive_program": "OUT MIRROR a + 2",
+    "params": {
+      "k": 2,
+      "r1": "a"
+    },
+    "phrasing": 1,
+    "public_cases": [
+      {
+        "case_id": 1,
+        "expected_output": [
+          118
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 206
+          }
+        }
+      },
+      {
+        "case_id": 2,
+        "expected_output": [
+          34
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 248
+          }
+        }
+      },
+      {
+        "case_id": 3,
+        "expected_output": [
+          71
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 34
+          }
+        }
+      },
+      {
+        "case_id": 4,
+        "expected_output": [
+          171
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 21
+          }
+        }
+      }
+    ],
+    "recipe": "mirror_add",
+    "seed": 7108718274993779909,
+    "subfamily": "baseline_stratum",
+    "task_id": "CAL-004",
+    "tier": 2
+  },
+  {
+    "canonical_program": "OUT (MIRROR a) + 4",
+    "case_seed": 9997379161030300738,
+    "description": "Read register a. Apply MIRROR to it. Add 4 to the value that MIRROR produces. Output the result.",
+    "difficulty": {
+      "features": {
+        "arith_op_count": 1,
+        "multi_statement": false,
+        "n_hidden_cases": 8,
+        "n_novel_op_tokens": 1,
+        "n_novel_ops": 1,
+        "n_public_cases": 4,
+        "nested_novel_expression": false,
+        "novel_ops": [
+          "MIRROR"
+        ],
+        "params": {
+          "k": 4,
+          "r1": "a"
+        },
+        "phrasing": 1,
+        "purity_trap": true,
+        "recipe": "mirror_add",
+        "starts_with_out": true,
+        "uses_queue_ops": false
+      },
+      "generator_version": "1.1.0",
+      "naive_discrimination": {
+        "hidden_fails": 8,
+        "public_fails": 4
+      },
+      "stratum_key": "mirror_add[k=4][phr=1]"
+    },
+    "family": "CAL",
+    "hidden_cases": [
+      {
+        "case_id": 5,
+        "expected_output": [
+          77
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 18
+          }
+        }
+      },
+      {
+        "case_id": 6,
+        "expected_output": [
+          139
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 97
+          }
+        }
+      },
+      {
+        "case_id": 7,
+        "expected_output": [
+          22
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 136
+          }
+        }
+      },
+      {
+        "case_id": 8,
+        "expected_output": [
+          142
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 145
+          }
+        }
+      },
+      {
+        "case_id": 9,
+        "expected_output": [
+          184
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 205
+          }
+        }
+      },
+      {
+        "case_id": 10,
+        "expected_output": [
+          30
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 152
+          }
+        }
+      },
+      {
+        "case_id": 11,
+        "expected_output": [
+          129
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 62
+          }
+        }
+      },
+      {
+        "case_id": 12,
+        "expected_output": [
+          237
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 23
+          }
+        }
+      }
+    ],
+    "naive_program": "OUT MIRROR a + 4",
+    "params": {
+      "k": 4,
+      "r1": "a"
+    },
+    "phrasing": 1,
+    "public_cases": [
+      {
+        "case_id": 1,
+        "expected_output": [
+          85
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 10
+          }
+        }
+      },
+      {
+        "case_id": 2,
+        "expected_output": [
+          243
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 119
+          }
+        }
+      },
+      {
+        "case_id": 3,
+        "expected_output": [
+          150
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 137
+          }
+        }
+      },
+      {
+        "case_id": 4,
+        "expected_output": [
+          74
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 162
+          }
+        }
+      }
+    ],
+    "recipe": "mirror_add",
+    "seed": 14981410835707476170,
+    "subfamily": "baseline_stratum",
+    "task_id": "CAL-005",
+    "tier": 2
+  },
+  {
+    "canonical_program": "OUT (MIRROR a) + 7",
+    "case_seed": 18255412996421726854,
+    "description": "Read register a. Apply MIRROR to it. Add 7 to the value that MIRROR produces. Output the result.",
+    "difficulty": {
+      "features": {
+        "arith_op_count": 1,
+        "multi_statement": false,
+        "n_hidden_cases": 8,
+        "n_novel_op_tokens": 1,
+        "n_novel_ops": 1,
+        "n_public_cases": 4,
+        "nested_novel_expression": false,
+        "novel_ops": [
+          "MIRROR"
+        ],
+        "params": {
+          "k": 7,
+          "r1": "a"
+        },
+        "phrasing": 1,
+        "purity_trap": true,
+        "recipe": "mirror_add",
+        "starts_with_out": true,
+        "uses_queue_ops": false
+      },
+      "generator_version": "1.1.0",
+      "naive_discrimination": {
+        "hidden_fails": 8,
+        "public_fails": 4
+      },
+      "stratum_key": "mirror_add[k=7][phr=1]"
+    },
+    "family": "CAL",
+    "hidden_cases": [
+      {
+        "case_id": 5,
+        "expected_output": [
+          62
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 108
+          }
+        }
+      },
+      {
+        "case_id": 6,
+        "expected_output": [
+          110
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 102
+          }
+        }
+      },
+      {
+        "case_id": 7,
+        "expected_output": [
+          51
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 212
+          }
+        }
+      },
+      {
+        "case_id": 8,
+        "expected_output": [
+          217
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 139
+          }
+        }
+      },
+      {
+        "case_id": 9,
+        "expected_output": [
+          129
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 158
+          }
+        }
+      },
+      {
+        "case_id": 10,
+        "expected_output": [
+          55
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 244
+          }
+        }
+      },
+      {
+        "case_id": 11,
+        "expected_output": [
+          108
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 38
+          }
+        }
+      },
+      {
+        "case_id": 12,
+        "expected_output": [
+          33
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 152
+          }
+        }
+      }
+    ],
+    "naive_program": "OUT MIRROR a + 7",
+    "params": {
+      "k": 7,
+      "r1": "a"
+    },
+    "phrasing": 1,
+    "public_cases": [
+      {
+        "case_id": 1,
+        "expected_output": [
+          32
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 24
+          }
+        }
+      },
+      {
+        "case_id": 2,
+        "expected_output": [
+          207
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 227
+          }
+        }
+      },
+      {
+        "case_id": 3,
+        "expected_output": [
+          187
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 205
+          }
+        }
+      },
+      {
+        "case_id": 4,
+        "expected_output": [
+          246
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 119
+          }
+        }
+      }
+    ],
+    "recipe": "mirror_add",
+    "seed": 14707123874197787090,
+    "subfamily": "baseline_stratum",
+    "task_id": "CAL-006",
+    "tier": 2
+  },
+  {
+    "canonical_program": "OUT (SWIZZLE a b) * 2 + 1",
+    "case_seed": 18152869679056188903,
+    "description": "Read registers a and b. Apply SWIZZLE to the pair (a, b). Multiply the value that SWIZZLE produces by 2, then add 1. Output the result.",
+    "difficulty": {
+      "features": {
+        "arith_op_count": 2,
+        "multi_statement": false,
+        "n_hidden_cases": 8,
+        "n_novel_op_tokens": 1,
+        "n_novel_ops": 1,
+        "n_public_cases": 4,
+        "nested_novel_expression": false,
+        "novel_ops": [
+          "SWIZZLE"
+        ],
+        "params": {
+          "k": 2,
+          "m": 1,
+          "r1": "a",
+          "r2": "b"
+        },
+        "phrasing": 1,
+        "purity_trap": false,
+        "recipe": "swizzle_mul_add",
+        "starts_with_out": true,
+        "uses_queue_ops": false
+      },
+      "generator_version": "1.1.0",
+      "naive_discrimination": {
+        "hidden_fails": 8,
+        "public_fails": 4
+      },
+      "stratum_key": "swizzle_mul_add[k=2][m=1][phr=1]"
+    },
+    "family": "CAL",
+    "hidden_cases": [
+      {
+        "case_id": 5,
+        "expected_output": [
+          7
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 15,
+            "b": 4
+          }
+        }
+      },
+      {
+        "case_id": 6,
+        "expected_output": [
+          133
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 247,
+            "b": 67
+          }
+        }
+      },
+      {
+        "case_id": 7,
+        "expected_output": [
+          233
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 251,
+            "b": 117
+          }
+        }
+      },
+      {
+        "case_id": 8,
+        "expected_output": [
+          7
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 148,
+            "b": 4
+          }
+        }
+      },
+      {
+        "case_id": 9,
+        "expected_output": [
+          159
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 5,
+            "b": 80
+          }
+        }
+      },
+      {
+        "case_id": 10,
+        "expected_output": [
+          155
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 191,
+            "b": 78
+          }
+        }
+      },
+      {
+        "case_id": 11,
+        "expected_output": [
+          75
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 51,
+            "b": 38
+          }
+        }
+      },
+      {
+        "case_id": 12,
+        "expected_output": [
+          97
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 172,
+            "b": 49
+          }
+        }
+      }
+    ],
+    "naive_program": "OUT SWIZZLE a b * 2 + 1",
+    "params": {
+      "k": 2,
+      "m": 1,
+      "r1": "a",
+      "r2": "b"
+    },
+    "phrasing": 1,
+    "public_cases": [
+      {
+        "case_id": 1,
+        "expected_output": [
+          163
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 170,
+            "b": 82
+          }
+        }
+      },
+      {
+        "case_id": 2,
+        "expected_output": [
+          91
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 189,
+            "b": 46
+          }
+        }
+      },
+      {
+        "case_id": 3,
+        "expected_output": [
+          241
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 150,
+            "b": 121
+          }
+        }
+      },
+      {
+        "case_id": 4,
+        "expected_output": [
+          123
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 146,
+            "b": 62
+          }
+        }
+      }
+    ],
+    "recipe": "swizzle_mul_add",
+    "seed": 4960456970240820055,
+    "subfamily": "baseline_stratum",
+    "task_id": "CAL-007",
+    "tier": 2
+  },
+  {
+    "canonical_program": "OUT (SWIZZLE a b) * 3 + 2",
+    "case_seed": 2490308053893973010,
+    "description": "Read registers a and b. Apply SWIZZLE to the pair (a, b). Multiply the value that SWIZZLE produces by 3, then add 2. Output the result.",
+    "difficulty": {
+      "features": {
+        "arith_op_count": 2,
+        "multi_statement": false,
+        "n_hidden_cases": 8,
+        "n_novel_op_tokens": 1,
+        "n_novel_ops": 1,
+        "n_public_cases": 4,
+        "nested_novel_expression": false,
+        "novel_ops": [
+          "SWIZZLE"
+        ],
+        "params": {
+          "k": 3,
+          "m": 2,
+          "r1": "a",
+          "r2": "b"
+        },
+        "phrasing": 1,
+        "purity_trap": false,
+        "recipe": "swizzle_mul_add",
+        "starts_with_out": true,
+        "uses_queue_ops": false
+      },
+      "generator_version": "1.1.0",
+      "naive_discrimination": {
+        "hidden_fails": 8,
+        "public_fails": 4
+      },
+      "stratum_key": "swizzle_mul_add[k=3][m=2][phr=1]"
+    },
+    "family": "CAL",
+    "hidden_cases": [
+      {
+        "case_id": 5,
+        "expected_output": [
+          164
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 136,
+            "b": 55
+          }
+        }
+      },
+      {
+        "case_id": 6,
+        "expected_output": [
+          92
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 149,
+            "b": 31
+          }
+        }
+      },
+      {
+        "case_id": 7,
+        "expected_output": [
+          110
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 73,
+            "b": 37
+          }
+        }
+      },
+      {
+        "case_id": 8,
+        "expected_output": [
+          65
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 103,
+            "b": 22
+          }
+        }
+      },
+      {
+        "case_id": 9,
+        "expected_output": [
+          8
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 11,
+            "b": 3
+          }
+        }
+      },
+      {
+        "case_id": 10,
+        "expected_output": [
+          26
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 59,
+            "b": 9
+          }
+        }
+      },
+      {
+        "case_id": 11,
+        "expected_output": [
+          200
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 200,
+            "b": 67
+          }
+        }
+      },
+      {
+        "case_id": 12,
+        "expected_output": [
+          68
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 94,
+            "b": 23
+          }
+        }
+      }
+    ],
+    "naive_program": "OUT SWIZZLE a b * 3 + 2",
+    "params": {
+      "k": 3,
+      "m": 2,
+      "r1": "a",
+      "r2": "b"
+    },
+    "phrasing": 1,
+    "public_cases": [
+      {
+        "case_id": 1,
+        "expected_output": [
+          134
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 152,
+            "b": 45
+          }
+        }
+      },
+      {
+        "case_id": 2,
+        "expected_output": [
+          185
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 248,
+            "b": 62
+          }
+        }
+      },
+      {
+        "case_id": 3,
+        "expected_output": [
+          14
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 224,
+            "b": 5
+          }
+        }
+      },
+      {
+        "case_id": 4,
+        "expected_output": [
+          125
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 233,
+            "b": 42
+          }
+        }
+      }
+    ],
+    "recipe": "swizzle_mul_add",
+    "seed": 6065759502004421566,
+    "subfamily": "baseline_stratum",
+    "task_id": "CAL-008",
+    "tier": 2
+  },
+  {
+    "canonical_program": "OUT (SWIZZLE a b) * 4 + 3",
+    "case_seed": 8302435594228564904,
+    "description": "Read registers a and b. Apply SWIZZLE to the pair (a, b). Multiply the value that SWIZZLE produces by 4, then add 3. Output the result.",
+    "difficulty": {
+      "features": {
+        "arith_op_count": 2,
+        "multi_statement": false,
+        "n_hidden_cases": 8,
+        "n_novel_op_tokens": 1,
+        "n_novel_ops": 1,
+        "n_public_cases": 4,
+        "nested_novel_expression": false,
+        "novel_ops": [
+          "SWIZZLE"
+        ],
+        "params": {
+          "k": 4,
+          "m": 3,
+          "r1": "a",
+          "r2": "b"
+        },
+        "phrasing": 1,
+        "purity_trap": false,
+        "recipe": "swizzle_mul_add",
+        "starts_with_out": true,
+        "uses_queue_ops": false
+      },
+      "generator_version": "1.1.0",
+      "naive_discrimination": {
+        "hidden_fails": 8,
+        "public_fails": 4
+      },
+      "stratum_key": "swizzle_mul_add[k=4][m=3][phr=1]"
+    },
+    "family": "CAL",
+    "hidden_cases": [
+      {
+        "case_id": 5,
+        "expected_output": [
+          43
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 89,
+            "b": 11
+          }
+        }
+      },
+      {
+        "case_id": 6,
+        "expected_output": [
+          71
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 100,
+            "b": 18
+          }
+        }
+      },
+      {
+        "case_id": 7,
+        "expected_output": [
+          51
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 214,
+            "b": 13
+          }
+        }
+      },
+      {
+        "case_id": 8,
+        "expected_output": [
+          219
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 45,
+            "b": 55
+          }
+        }
+      },
+      {
+        "case_id": 9,
+        "expected_output": [
+          235
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 254,
+            "b": 59
+          }
+        }
+      },
+      {
+        "case_id": 10,
+        "expected_output": [
+          27
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 62,
+            "b": 7
+          }
+        }
+      },
+      {
+        "case_id": 11,
+        "expected_output": [
+          175
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 165,
+            "b": 44
+          }
+        }
+      },
+      {
+        "case_id": 12,
+        "expected_output": [
+          251
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 66,
+            "b": 63
+          }
+        }
+      }
+    ],
+    "naive_program": "OUT SWIZZLE a b * 4 + 3",
+    "params": {
+      "k": 4,
+      "m": 3,
+      "r1": "a",
+      "r2": "b"
+    },
+    "phrasing": 1,
+    "public_cases": [
+      {
+        "case_id": 1,
+        "expected_output": [
+          115
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 1,
+            "b": 29
+          }
+        }
+      },
+      {
+        "case_id": 2,
+        "expected_output": [
+          11
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 0,
+            "b": 3
+          }
+        }
+      },
+      {
+        "case_id": 3,
+        "expected_output": [
+          219
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 59,
+            "b": 55
+          }
+        }
+      },
+      {
+        "case_id": 4,
+        "expected_output": [
+          163
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 30,
+            "b": 41
+          }
+        }
+      }
+    ],
+    "recipe": "swizzle_mul_add",
+    "seed": 12180294543888339698,
+    "subfamily": "baseline_stratum",
+    "task_id": "CAL-009",
+    "tier": 2
+  },
+  {
+    "canonical_program": "SPLICE a b\nDRAIN",
+    "case_seed": 16190313614193388308,
+    "description": "Read registers a and b. Use SPLICE on the pair (a, b). SPLICE puts three numbers onto the queue. Move the entire queue to the output, front to back.",
+    "difficulty": {
+      "features": {
+        "arith_op_count": 0,
+        "multi_statement": true,
+        "n_hidden_cases": 8,
+        "n_novel_op_tokens": 1,
+        "n_novel_ops": 1,
+        "n_public_cases": 4,
+        "nested_novel_expression": false,
+        "novel_ops": [
+          "SPLICE"
+        ],
+        "params": {
+          "mode": "drain",
+          "r1": "a",
+          "r2": "b"
+        },
+        "phrasing": 1,
+        "purity_trap": false,
+        "recipe": "splice_drain",
+        "starts_with_out": false,
+        "uses_queue_ops": true
+      },
+      "generator_version": "1.1.0",
+      "naive_discrimination": {
+        "hidden_fails": 8,
+        "public_fails": 4
+      },
+      "stratum_key": "splice_drain[mode=drain][phr=1]"
+    },
+    "family": "CAL",
+    "hidden_cases": [
+      {
+        "case_id": 5,
+        "expected_output": [
+          1,
+          17,
+          7
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 14,
+            "b": 177
+          }
+        }
+      },
+      {
+        "case_id": 6,
+        "expected_output": [
+          9,
+          19,
+          4
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 91,
+            "b": 194
+          }
+        }
+      },
+      {
+        "case_id": 7,
+        "expected_output": [
+          15,
+          23,
+          0
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 154,
+            "b": 230
+          }
+        }
+      },
+      {
+        "case_id": 8,
+        "expected_output": [
+          2,
+          25,
+          5
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 25,
+            "b": 255
+          }
+        }
+      },
+      {
+        "case_id": 9,
+        "expected_output": [
+          8,
+          25,
+          5
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 87,
+            "b": 255
+          }
+        }
+      },
+      {
+        "case_id": 10,
+        "expected_output": [
+          4,
+          6,
+          5
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 44,
+            "b": 65
+          }
+        }
+      },
+      {
+        "case_id": 11,
+        "expected_output": [
+          0,
+          4,
+          8
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 2,
+            "b": 48
+          }
+        }
+      },
+      {
+        "case_id": 12,
+        "expected_output": [
+          23,
+          18,
+          8
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 238,
+            "b": 188
+          }
+        }
+      }
+    ],
+    "naive_program": "OUT SPLICE a b",
+    "params": {
+      "mode": "drain",
+      "r1": "a",
+      "r2": "b"
+    },
+    "phrasing": 1,
+    "public_cases": [
+      {
+        "case_id": 1,
+        "expected_output": [
+          19,
+          8,
+          6
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 192,
+            "b": 86
+          }
+        }
+      },
+      {
+        "case_id": 2,
+        "expected_output": [
+          24,
+          3,
+          1
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 245,
+            "b": 31
+          }
+        }
+      },
+      {
+        "case_id": 3,
+        "expected_output": [
+          8,
+          15,
+          7
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 85,
+            "b": 157
+          }
+        }
+      },
+      {
+        "case_id": 4,
+        "expected_output": [
+          2,
+          21,
+          3
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 26,
+            "b": 213
+          }
+        }
+      }
+    ],
+    "recipe": "splice_drain",
+    "seed": 16607644261312622871,
+    "subfamily": "baseline_stratum",
+    "task_id": "CAL-010",
+    "tier": 2
+  },
+  {
+    "canonical_program": "SPLICE a b\nPOP c\nDRAIN",
+    "case_seed": 213739529316901529,
+    "description": "Read registers a and b. Use SPLICE on the pair (a, b). SPLICE puts three numbers onto the queue. Remove the front element of the queue and throw it away. Move the remaining queue elements to the output, front to back.",
+    "difficulty": {
+      "features": {
+        "arith_op_count": 0,
+        "multi_statement": true,
+        "n_hidden_cases": 8,
+        "n_novel_op_tokens": 1,
+        "n_novel_ops": 1,
+        "n_public_cases": 4,
+        "nested_novel_expression": false,
+        "novel_ops": [
+          "SPLICE"
+        ],
+        "params": {
+          "mode": "discard_front",
+          "r1": "a",
+          "r2": "b"
+        },
+        "phrasing": 1,
+        "purity_trap": false,
+        "recipe": "splice_drain",
+        "starts_with_out": false,
+        "uses_queue_ops": true
+      },
+      "generator_version": "1.1.0",
+      "naive_discrimination": {
+        "hidden_fails": 8,
+        "public_fails": 4
+      },
+      "stratum_key": "splice_drain[mode=discard_front][phr=1]"
+    },
+    "family": "CAL",
+    "hidden_cases": [
+      {
+        "case_id": 5,
+        "expected_output": [
+          22,
+          6
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 229,
+            "b": 226
+          }
+        }
+      },
+      {
+        "case_id": 6,
+        "expected_output": [
+          12,
+          2
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 238,
+            "b": 122
+          }
+        }
+      },
+      {
+        "case_id": 7,
+        "expected_output": [
+          8,
+          4
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 93,
+            "b": 84
+          }
+        }
+      },
+      {
+        "case_id": 8,
+        "expected_output": [
+          9,
+          8
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 190,
+            "b": 98
+          }
+        }
+      },
+      {
+        "case_id": 9,
+        "expected_output": [
+          3,
+          9
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 33,
+            "b": 39
+          }
+        }
+      },
+      {
+        "case_id": 10,
+        "expected_output": [
+          19,
+          9
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 57,
+            "b": 199
+          }
+        }
+      },
+      {
+        "case_id": 11,
+        "expected_output": [
+          14,
+          1
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 104,
+            "b": 141
+          }
+        }
+      },
+      {
+        "case_id": 12,
+        "expected_output": [
+          9,
+          6
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 23,
+            "b": 96
+          }
+        }
+      }
+    ],
+    "naive_program": "SPLICE a b\nDRAIN",
+    "params": {
+      "mode": "discard_front",
+      "r1": "a",
+      "r2": "b"
+    },
+    "phrasing": 1,
+    "public_cases": [
+      {
+        "case_id": 1,
+        "expected_output": [
+          8,
+          9
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 48,
+            "b": 89
+          }
+        }
+      },
+      {
+        "case_id": 2,
+        "expected_output": [
+          15,
+          2
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 30,
+            "b": 152
+          }
+        }
+      },
+      {
+        "case_id": 3,
+        "expected_output": [
+          2,
+          4
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 120,
+            "b": 24
+          }
+        }
+      },
+      {
+        "case_id": 4,
+        "expected_output": [
+          23,
+          9
+        ],
+        "inputs": {
+          "queue": [],
+          "registers": {
+            "a": 193,
+            "b": 239
+          }
+        }
+      }
+    ],
+    "recipe": "splice_drain",
+    "seed": 11776766770363342280,
+    "subfamily": "baseline_stratum",
+    "task_id": "CAL-011",
+    "tier": 2
+  }
+]

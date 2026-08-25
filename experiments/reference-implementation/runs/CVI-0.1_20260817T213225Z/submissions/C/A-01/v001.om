@@ -1,0 +1,2 @@
+(SWIZZLE a b) * 2
+OUT a

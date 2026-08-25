@@ -1,0 +1,179 @@
+{
+  "created_iso": "2026-08-17T21:28:55Z",
+  "extra": {
+    "status": "needs_refinement"
+  },
+  "files": [
+    {
+      "path": "api_usage.json",
+      "sha256": "66f44a2c48635727d5717f73c55f1eeb2203809f080ebf42cff3bcb1497b3826",
+      "size_bytes": 756
+    },
+    {
+      "path": "config.json",
+      "sha256": "b132268aee596ac10a0494d515692051890a70e3d640e0e4755b28634b58fc18",
+      "size_bytes": 2228
+    },
+    {
+      "path": "selection.json",
+      "sha256": "30d7bb649753ba674ec00d6d044671044d1bafc6410c3370f2ff59d269a5bc8a",
+      "size_bytes": 11705
+    },
+    {
+      "path": "prompts/spec_sheet.md",
+      "sha256": "cf3e4cce8eb860ebf58ee15d14545b24ddc10762851bec7c9926b84f94259485",
+      "size_bytes": 4493
+    },
+    {
+      "path": "prompts/CAL-cal_baseline_1/baseline/CAL-cal_baseline_1-baseline-1/prompt_000_baseline.txt",
+      "sha256": "385034d8b16ae85466799c4fca4f47e8b7d6945da4d052e1a98bf9bf85b76fb3",
+      "size_bytes": 5382
+    },
+    {
+      "path": "prompts/CAL-cal_baseline_2/baseline/CAL-cal_baseline_2-baseline-1/prompt_000_baseline.txt",
+      "sha256": "9d5d52ed35173d3f48d71aa53d4b7193da2e22ab18ccd72172313615e4702914",
+      "size_bytes": 5387
+    },
+    {
+      "path": "scores/baseline_batch_1.json",
+      "sha256": "cc9dc32f41ce2e17a81e8bb6fffbb3ee859143562df65f671b227f6016ee2cb2",
+      "size_bytes": 311
+    },
+    {
+      "path": "scores/baseline_batch_2.json",
+      "sha256": "cef2e5f163613b962e2a2bad26d5d908f6f8be5d9780f13675f9b0fec6c0bf1d",
+      "size_bytes": 311
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_1/CAL-001/v001.om",
+      "sha256": "672f4ac049c1f001e4f93601dc2f5f6e408f3e4d66efd512f4e7cc5e7681e4f1",
+      "size_bytes": 25
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_1/CAL-002/v001.om",
+      "sha256": "fb9da456e818560fb9bc4847065dde122f75a1b1763223feb76474acc258ec29",
+      "size_bytes": 25
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_1/CAL-003/v001.om",
+      "sha256": "0ba26514980a49d8c0677daf9b1b161c3c3ee5c1d23b3908033835df29d5e8c0",
+      "size_bytes": 25
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_1/CAL-004/v001.om",
+      "sha256": "7ec056216c2066133d69bacd58fcb034367261b76ada3c58be71dfcd3c90401d",
+      "size_bytes": 22
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_1/CAL-005/v001.om",
+      "sha256": "1da0aed9044897332b834b02a22836d9e7acff07a65b6d85157ce43978df12dd",
+      "size_bytes": 22
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_1/CAL-006/v001.om",
+      "sha256": "34b1193ed00dde9bd95d3bf918277b0b9a66686aa332e109633710621f22ff56",
+      "size_bytes": 22
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_1/CAL-007/v001.om",
+      "sha256": "69c43d96820749711d4472a11f07e8040560087128a368b78245f769e508d64a",
+      "size_bytes": 33
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_1/CAL-008/v001.om",
+      "sha256": "06c3350ebe4ea9c98fdcff35b6f08acfc9a4c30a836c94e9995d72ce9989df73",
+      "size_bytes": 33
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_1/CAL-009/v001.om",
+      "sha256": "7c2586316231790bc3af48eaee9e0172d0b9232e1d57a405a485404997800f59",
+      "size_bytes": 33
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_1/CAL-010/v001.om",
+      "sha256": "ab9bfeb45f1581c146050a5b495d80696b77a0831c2c8c54720e5823359c7246",
+      "size_bytes": 16
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_1/CAL-011/v001.om",
+      "sha256": "ac29bb70ed0750d72c9a0f2d6d3054c28bfa52b99b28f171eba229231bf909c4",
+      "size_bytes": 22
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_2/CAL-001/v001.om",
+      "sha256": "672f4ac049c1f001e4f93601dc2f5f6e408f3e4d66efd512f4e7cc5e7681e4f1",
+      "size_bytes": 25
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_2/CAL-002/v001.om",
+      "sha256": "fb9da456e818560fb9bc4847065dde122f75a1b1763223feb76474acc258ec29",
+      "size_bytes": 25
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_2/CAL-003/v001.om",
+      "sha256": "0ba26514980a49d8c0677daf9b1b161c3c3ee5c1d23b3908033835df29d5e8c0",
+      "size_bytes": 25
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_2/CAL-004/v001.om",
+      "sha256": "7ec056216c2066133d69bacd58fcb034367261b76ada3c58be71dfcd3c90401d",
+      "size_bytes": 22
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_2/CAL-005/v001.om",
+      "sha256": "1da0aed9044897332b834b02a22836d9e7acff07a65b6d85157ce43978df12dd",
+      "size_bytes": 22
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_2/CAL-006/v001.om",
+      "sha256": "34b1193ed00dde9bd95d3bf918277b0b9a66686aa332e109633710621f22ff56",
+      "size_bytes": 22
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_2/CAL-007/v001.om",
+      "sha256": "69c43d96820749711d4472a11f07e8040560087128a368b78245f769e508d64a",
+      "size_bytes": 33
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_2/CAL-008/v001.om",
+      "sha256": "06c3350ebe4ea9c98fdcff35b6f08acfc9a4c30a836c94e9995d72ce9989df73",
+      "size_bytes": 33
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_2/CAL-009/v001.om",
+      "sha256": "7c2586316231790bc3af48eaee9e0172d0b9232e1d57a405a485404997800f59",
+      "size_bytes": 33
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_2/CAL-010/v001.om",
+      "sha256": "ab9bfeb45f1581c146050a5b495d80696b77a0831c2c8c54720e5823359c7246",
+      "size_bytes": 16
+    },
+    {
+      "path": "submissions/CAL-cal_baseline_2/CAL-011/v001.om",
+      "sha256": "ac29bb70ed0750d72c9a0f2d6d3054c28bfa52b99b28f171eba229231bf909c4",
+      "size_bytes": 22
+    },
+    {
+      "path": "tasks/baseline_batch_1.json",
+      "sha256": "961727564f6be2d6eb8c64f6a523a81779fc31d779bf9a783b09c7a5b3edf899",
+      "size_bytes": 44264
+    },
+    {
+      "path": "tasks/baseline_batch_2.json",
+      "sha256": "5559b30d2f5fc08be0fc0aa3a45593949f282a96f35f38d3a99b2fd8156f9d32",
+      "size_bytes": 44284
+    },
+    {
+      "path": "transcripts/CAL-cal_baseline_1/baseline/CAL-cal_baseline_1-baseline-1/turn_001_baseline.json",
+      "sha256": "e5cee437027549f5367d82df26b6b0f9575baf87e74928b786fe2776636d07de",
+      "size_bytes": 6797
+    },
+    {
+      "path": "transcripts/CAL-cal_baseline_2/baseline/CAL-cal_baseline_2-baseline-1/turn_001_baseline.json",
+      "sha256": "aac69dff362b12de621b9895aa9aecab294d3c91ed93716848e6f43f4c90240d",
+      "size_bytes": 6803
+    }
+  ],
+  "run_id": "CVI-0.1_calibration_20260817T212849Z"
+}

@@ -1,0 +1,71 @@
+{
+  "created_iso": "2026-08-17T19:55:20Z",
+  "extra": {
+    "S0": 1.0,
+    "status": "calibration_attempt",
+    "tier": 1
+  },
+  "files": [
+    {
+      "path": "api_usage.json",
+      "sha256": "4c39fa7454e2f6b351caa8e2f791129d3061788a7543190f71e14d45904c65e9",
+      "size_bytes": 737
+    },
+    {
+      "path": "config.json",
+      "sha256": "03cce3a99b3f0c752b793a18fa9ef913f9e1a3e48d561f3176ce23d378cc572b",
+      "size_bytes": 804
+    },
+    {
+      "path": "scores.json",
+      "sha256": "75d5eedfb82a05712d6cf1fb5c6659353d76242b5420b2c446180b048504aeeb",
+      "size_bytes": 254
+    },
+    {
+      "path": "seeds.json",
+      "sha256": "911bbbe4f69d0f32ac9dc458f15e6690cde3e228865fb7cb30dcf62a268a3b09",
+      "size_bytes": 537
+    },
+    {
+      "path": "prompts/spec_sheet.md",
+      "sha256": "cf3e4cce8eb860ebf58ee15d14545b24ddc10762851bec7c9926b84f94259485",
+      "size_bytes": 4493
+    },
+    {
+      "path": "prompts/CAL/calibration/CAL-calibration-1/prompt_000_cal_2_tier1.txt",
+      "sha256": "e6d83ec79fb077e13a3aef0f66fccd96d931e6136c5d035d1995d9eed92448a6",
+      "size_bytes": 2029
+    },
+    {
+      "path": "submissions/CAL/A-01/v001.om",
+      "sha256": "672f4ac049c1f001e4f93601dc2f5f6e408f3e4d66efd512f4e7cc5e7681e4f1",
+      "size_bytes": 25
+    },
+    {
+      "path": "submissions/CAL/A-02/v001.om",
+      "sha256": "d5586bbfffe8318c3d6b7eba31b9b72b307eb677afed88e1506ea2eb51aa4d9c",
+      "size_bytes": 18
+    },
+    {
+      "path": "submissions/CAL/A-03/v001.om",
+      "sha256": "69c43d96820749711d4472a11f07e8040560087128a368b78245f769e508d64a",
+      "size_bytes": 33
+    },
+    {
+      "path": "submissions/CAL/A-04/v001.om",
+      "sha256": "ab9bfeb45f1581c146050a5b495d80696b77a0831c2c8c54720e5823359c7246",
+      "size_bytes": 16
+    },
+    {
+      "path": "tasks/calibration_tasks.json",
+      "sha256": "34adfa8da0cbf084485f55eb152c7ce584a3fe0e96ac6bc95026b79d25531729",
+      "size_bytes": 13059
+    },
+    {
+      "path": "transcripts/CAL/calibration/CAL-calibration-1/turn_001_cal_2_tier1.json",
+      "sha256": "1024de373f59512456a1ea65bc11f5a5d633e45bf1832fc206dc79666e162cdb",
+      "size_bytes": 2737
+    }
+  ],
+  "run_id": "calibration_2_20260817T195429Z"
+}

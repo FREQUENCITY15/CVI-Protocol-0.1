@@ -1,0 +1,90 @@
+Attempt each of the following tasks ONE time. Write one OrderMachine program per task.
+
+
+## Task CAL-001
+Read registers a and b. Apply SWIZZLE to the pair (a, b). Take the value that SWIZZLE produces and multiply it by 2. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 4, "b": 49}, "queue": []} -> [96]
+  case 2: inputs {"registers": {"a": 242, "b": 20}, "queue": []} -> [38]
+  case 3: inputs {"registers": {"a": 92, "b": 45}, "queue": []} -> [88]
+  case 4: inputs {"registers": {"a": 143, "b": 26}, "queue": []} -> [50]
+
+## Task CAL-002
+Read registers a and b. Apply SWIZZLE to the pair (a, b). Take the value that SWIZZLE produces and multiply it by 3. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 11, "b": 17}, "queue": []} -> [48]
+  case 2: inputs {"registers": {"a": 77, "b": 36}, "queue": []} -> [105]
+  case 3: inputs {"registers": {"a": 131, "b": 35}, "queue": []} -> [102]
+  case 4: inputs {"registers": {"a": 75, "b": 6}, "queue": []} -> [15]
+
+## Task CAL-003
+Read registers a and b. Apply SWIZZLE to the pair (a, b). Take the value that SWIZZLE produces and multiply it by 5. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 223, "b": 49}, "queue": []} -> [240]
+  case 2: inputs {"registers": {"a": 125, "b": 15}, "queue": []} -> [70]
+  case 3: inputs {"registers": {"a": 206, "b": 2}, "queue": []} -> [5]
+  case 4: inputs {"registers": {"a": 200, "b": 40}, "queue": []} -> [195]
+
+## Task CAL-004
+Read register a. Apply MIRROR to it. Add 2 to the value that MIRROR produces. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 206}, "queue": []} -> [118]
+  case 2: inputs {"registers": {"a": 248}, "queue": []} -> [34]
+  case 3: inputs {"registers": {"a": 34}, "queue": []} -> [71]
+  case 4: inputs {"registers": {"a": 21}, "queue": []} -> [171]
+
+## Task CAL-005
+Read register a. Apply MIRROR to it. Add 4 to the value that MIRROR produces. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 10}, "queue": []} -> [85]
+  case 2: inputs {"registers": {"a": 119}, "queue": []} -> [243]
+  case 3: inputs {"registers": {"a": 137}, "queue": []} -> [150]
+  case 4: inputs {"registers": {"a": 162}, "queue": []} -> [74]
+
+## Task CAL-006
+Read register a. Apply MIRROR to it. Add 7 to the value that MIRROR produces. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 24}, "queue": []} -> [32]
+  case 2: inputs {"registers": {"a": 227}, "queue": []} -> [207]
+  case 3: inputs {"registers": {"a": 205}, "queue": []} -> [187]
+  case 4: inputs {"registers": {"a": 119}, "queue": []} -> [246]
+
+## Task CAL-007
+Read registers a and b. Apply SWIZZLE to the pair (a, b). Multiply the value that SWIZZLE produces by 2, then add 1. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 170, "b": 82}, "queue": []} -> [163]
+  case 2: inputs {"registers": {"a": 189, "b": 46}, "queue": []} -> [91]
+  case 3: inputs {"registers": {"a": 150, "b": 121}, "queue": []} -> [241]
+  case 4: inputs {"registers": {"a": 146, "b": 62}, "queue": []} -> [123]
+
+## Task CAL-008
+Read registers a and b. Apply SWIZZLE to the pair (a, b). Multiply the value that SWIZZLE produces by 3, then add 2. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 152, "b": 45}, "queue": []} -> [134]
+  case 2: inputs {"registers": {"a": 248, "b": 62}, "queue": []} -> [185]
+  case 3: inputs {"registers": {"a": 224, "b": 5}, "queue": []} -> [14]
+  case 4: inputs {"registers": {"a": 233, "b": 42}, "queue": []} -> [125]
+
+## Task CAL-009
+Read registers a and b. Apply SWIZZLE to the pair (a, b). Multiply the value that SWIZZLE produces by 4, then add 3. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 1, "b": 29}, "queue": []} -> [115]
+  case 2: inputs {"registers": {"a": 0, "b": 3}, "queue": []} -> [11]
+  case 3: inputs {"registers": {"a": 59, "b": 55}, "queue": []} -> [219]
+  case 4: inputs {"registers": {"a": 30, "b": 41}, "queue": []} -> [163]
+
+## Task CAL-010
+Read registers a and b. Use SPLICE on the pair (a, b). SPLICE puts three numbers onto the queue. Move the entire queue to the output, front to back.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 192, "b": 86}, "queue": []} -> [19, 8, 6]
+  case 2: inputs {"registers": {"a": 245, "b": 31}, "queue": []} -> [24, 3, 1]
+  case 3: inputs {"registers": {"a": 85, "b": 157}, "queue": []} -> [8, 15, 7]
+  case 4: inputs {"registers": {"a": 26, "b": 213}, "queue": []} -> [2, 21, 3]
+
+## Task CAL-011
+Read registers a and b. Use SPLICE on the pair (a, b). SPLICE puts three numbers onto the queue. Remove the front element of the queue and throw it away. Move the remaining queue elements to the output, front to back.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 48, "b": 89}, "queue": []} -> [8, 9]
+  case 2: inputs {"registers": {"a": 30, "b": 152}, "queue": []} -> [15, 2]
+  case 3: inputs {"registers": {"a": 120, "b": 24}, "queue": []} -> [2, 4]
+  case 4: inputs {"registers": {"a": 193, "b": 239}, "queue": []} -> [23, 9]

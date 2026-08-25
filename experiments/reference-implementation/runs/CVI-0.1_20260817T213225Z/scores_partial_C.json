@@ -1,0 +1,4379 @@
+{
+  "api_usage": {
+    "api_errors": [],
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 34176,
+    "call_log": [
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 1280,
+        "error": null,
+        "index": 1,
+        "input_tokens": 820,
+        "label": "S:baseline:baseline",
+        "latency_s": 1.914,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 1408,
+        "error": null,
+        "index": 2,
+        "input_tokens": 698,
+        "label": "S:ret:ret",
+        "latency_s": 2.13,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 1408,
+        "error": null,
+        "index": 3,
+        "input_tokens": 960,
+        "label": "S:transfer:transfer",
+        "latency_s": 2.362,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 151
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2048,
+        "error": null,
+        "index": 4,
+        "input_tokens": 52,
+        "label": "S_PRIME:baseline:baseline",
+        "latency_s": 2.126,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 106
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 1280,
+        "error": null,
+        "index": 5,
+        "input_tokens": 836,
+        "label": "S_PRIME:critique:round_0",
+        "latency_s": 2.144,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2176,
+        "error": null,
+        "index": 6,
+        "input_tokens": 207,
+        "label": "S_PRIME:critique:round_1",
+        "latency_s": 1.998,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2432,
+        "error": null,
+        "index": 7,
+        "input_tokens": 218,
+        "label": "S_PRIME:critique:round_2",
+        "latency_s": 1.376,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2688,
+        "error": null,
+        "index": 8,
+        "input_tokens": 229,
+        "label": "S_PRIME:critique:round_3",
+        "latency_s": 2.142,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2048,
+        "error": null,
+        "index": 9,
+        "input_tokens": 58,
+        "label": "S_PRIME:ret:ret",
+        "latency_s": 2.142,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2304,
+        "error": null,
+        "index": 10,
+        "input_tokens": 64,
+        "label": "S_PRIME:transfer:transfer",
+        "latency_s": 2.756,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 178
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2048,
+        "error": null,
+        "index": 11,
+        "input_tokens": 52,
+        "label": "C:baseline:baseline",
+        "latency_s": 1.983,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 1280,
+        "error": null,
+        "index": 12,
+        "input_tokens": 836,
+        "label": "C:interaction:round_0",
+        "latency_s": 2.909,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2176,
+        "error": null,
+        "index": 13,
+        "input_tokens": 253,
+        "label": "C:interaction:revise_1",
+        "latency_s": 1.441,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 100
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2432,
+        "error": null,
+        "index": 14,
+        "input_tokens": 291,
+        "label": "C:interaction:revise_2",
+        "latency_s": 2.11,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 104
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2816,
+        "error": null,
+        "index": 15,
+        "input_tokens": 205,
+        "label": "C:interaction:revise_3",
+        "latency_s": 1.899,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 104
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2048,
+        "error": null,
+        "index": 16,
+        "input_tokens": 58,
+        "label": "C:ret:ret",
+        "latency_s": 1.841,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2304,
+        "error": null,
+        "index": 17,
+        "input_tokens": 64,
+        "label": "C:transfer:transfer",
+        "latency_s": 2.304,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 178
+      }
+    ],
+    "calls": 17,
+    "input_tokens": 5901,
+    "output_tokens": 1871,
+    "retries": 0
+  },
+  "arm": "C",
+  "result": {
+    "phase_0": {
+      "elapsed_s": 1.985,
+      "label": "baseline",
+      "session_id": "C-baseline-1",
+      "tasks": {
+        "A-01": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                44
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                45
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                102
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                83
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                3
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                19
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                10
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                3
+              ],
+              "passed": false
+            }
+          ],
+          "hidden_score": 0.0,
+          "program": "(SWIZZLE a b) * 2\nOUT a"
+        },
+        "A-02": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                175
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                16
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                173
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                149
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                134
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                103
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                52
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                130
+              ],
+              "passed": false
+            }
+          ],
+          "hidden_score": 0.0,
+          "program": "(MIRROR a) + 2\nOUT a"
+        },
+        "A-03": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                49
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                14
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                12
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                111
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                47
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                111
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                81
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                92
+              ],
+              "passed": false
+            }
+          ],
+          "hidden_score": 0.0,
+          "program": "(SWIZZLE a b) * 2 + 1\nOUT a"
+        },
+        "A-04": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                15,
+                7,
+                8
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                11,
+                14,
+                5
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                20,
+                12,
+                2
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                5,
+                25,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                21,
+                10,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                22,
+                3,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                7,
+                24,
+                9
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                5,
+                1,
+                4
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SPLICE a b\nDRAIN"
+        }
+      }
+    },
+    "phase_0_prompt_sha256": "0d01b023f88224dadde1bb7174576de3ef79d318124e4b2fcf7b8f45e950d076",
+    "phase_a": {
+      "final": {
+        "A-01": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                88
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                90
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                204
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                166
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                6
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                38
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                20
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                6
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SWIZZLE a b\nMUL a 2\nOUT a",
+          "public_all_pass": true,
+          "public_results": [
+            {
+              "case_id": 1,
+              "error_class": null,
+              "output": [
+                42
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 2,
+              "error_class": null,
+              "output": [
+                196
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 3,
+              "error_class": null,
+              "output": [
+                160
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 4,
+              "error_class": null,
+              "output": [
+                160
+              ],
+              "passed": true
+            }
+          ]
+        },
+        "A-02": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                177
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                18
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                175
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                151
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                136
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                105
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                54
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                132
+              ],
+              "passed": false
+            }
+          ],
+          "hidden_score": 0.0,
+          "program": "MIRROR a\nSET b a\nADD b 2\nOUT b",
+          "public_all_pass": false,
+          "public_results": [
+            {
+              "case_id": 1,
+              "error_class": null,
+              "output": [
+                221
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 2,
+              "error_class": null,
+              "output": [
+                168
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 3,
+              "error_class": null,
+              "output": [
+                243
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 4,
+              "error_class": null,
+              "output": [
+                251
+              ],
+              "passed": false
+            }
+          ]
+        },
+        "A-03": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                99
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                29
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                25
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                223
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                95
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                223
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                163
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                185
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SWIZZLE a b\nMUL a 2\nADD a 1\nOUT a",
+          "public_all_pass": true,
+          "public_results": [
+            {
+              "case_id": 1,
+              "error_class": null,
+              "output": [
+                85
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 2,
+              "error_class": null,
+              "output": [
+                145
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 3,
+              "error_class": null,
+              "output": [
+                47
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 4,
+              "error_class": null,
+              "output": [
+                219
+              ],
+              "passed": true
+            }
+          ]
+        },
+        "A-04": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                15,
+                7,
+                8
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                11,
+                14,
+                5
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                20,
+                12,
+                2
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                5,
+                25,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                21,
+                10,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                22,
+                3,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                7,
+                24,
+                9
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                5,
+                1,
+                4
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SPLICE a b\nDRAIN",
+          "public_all_pass": true,
+          "public_results": [
+            {
+              "case_id": 1,
+              "error_class": null,
+              "output": [
+                8,
+                16,
+                9
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 2,
+              "error_class": null,
+              "output": [
+                13,
+                0,
+                4
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 3,
+              "error_class": null,
+              "output": [
+                21,
+                15,
+                1
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 4,
+              "error_class": null,
+              "output": [
+                22,
+                20,
+                4
+              ],
+              "passed": true
+            }
+          ]
+        }
+      },
+      "initial": {
+        "A-01": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                44
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                45
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                102
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                83
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                3
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                19
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                10
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                3
+              ],
+              "passed": false
+            }
+          ],
+          "hidden_score": 0.0,
+          "program": "(SWIZZLE a b) * 2\nOUT a",
+          "public_all_pass": false,
+          "public_results": [
+            {
+              "case_id": 1,
+              "error_class": null,
+              "output": [
+                21
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 2,
+              "error_class": null,
+              "output": [
+                98
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 3,
+              "error_class": null,
+              "output": [
+                80
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 4,
+              "error_class": null,
+              "output": [
+                80
+              ],
+              "passed": false
+            }
+          ]
+        },
+        "A-02": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                175
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                16
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                173
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                149
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                134
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                103
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                52
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                130
+              ],
+              "passed": false
+            }
+          ],
+          "hidden_score": 0.0,
+          "program": "(MIRROR a) + 2\nOUT a",
+          "public_all_pass": false,
+          "public_results": [
+            {
+              "case_id": 1,
+              "error_class": null,
+              "output": [
+                219
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 2,
+              "error_class": null,
+              "output": [
+                166
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 3,
+              "error_class": null,
+              "output": [
+                241
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 4,
+              "error_class": null,
+              "output": [
+                249
+              ],
+              "passed": false
+            }
+          ]
+        },
+        "A-03": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                49
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                14
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                12
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                111
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                47
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                111
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                81
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                92
+              ],
+              "passed": false
+            }
+          ],
+          "hidden_score": 0.0,
+          "program": "(SWIZZLE a b) * 2 + 1\nOUT a",
+          "public_all_pass": false,
+          "public_results": [
+            {
+              "case_id": 1,
+              "error_class": null,
+              "output": [
+                42
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 2,
+              "error_class": null,
+              "output": [
+                72
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 3,
+              "error_class": null,
+              "output": [
+                23
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 4,
+              "error_class": null,
+              "output": [
+                109
+              ],
+              "passed": false
+            }
+          ]
+        },
+        "A-04": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                15,
+                7,
+                8
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                11,
+                14,
+                5
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                20,
+                12,
+                2
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                5,
+                25,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                21,
+                10,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                22,
+                3,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                7,
+                24,
+                9
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                5,
+                1,
+                4
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SPLICE a b\nDRAIN",
+          "public_all_pass": true,
+          "public_results": [
+            {
+              "case_id": 1,
+              "error_class": null,
+              "output": [
+                8,
+                16,
+                9
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 2,
+              "error_class": null,
+              "output": [
+                13,
+                0,
+                4
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 3,
+              "error_class": null,
+              "output": [
+                21,
+                15,
+                1
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 4,
+              "error_class": null,
+              "output": [
+                22,
+                20,
+                4
+              ],
+              "passed": true
+            }
+          ]
+        }
+      },
+      "revision_rounds_used": 3,
+      "rounds": [
+        {
+          "round": 0,
+          "tasks": {
+            "A-01": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    44
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    45
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    102
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    83
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    3
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    19
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    10
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    3
+                  ],
+                  "passed": false
+                }
+              ],
+              "hidden_score": 0.0,
+              "program": "(SWIZZLE a b) * 2\nOUT a",
+              "public_all_pass": false,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    21
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    98
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    80
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    80
+                  ],
+                  "passed": false
+                }
+              ]
+            },
+            "A-02": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    175
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    16
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    173
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    149
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    134
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    103
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    52
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    130
+                  ],
+                  "passed": false
+                }
+              ],
+              "hidden_score": 0.0,
+              "program": "(MIRROR a) + 2\nOUT a",
+              "public_all_pass": false,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    219
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    166
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    241
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    249
+                  ],
+                  "passed": false
+                }
+              ]
+            },
+            "A-03": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    49
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    14
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    12
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    111
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    47
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    111
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    81
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    92
+                  ],
+                  "passed": false
+                }
+              ],
+              "hidden_score": 0.0,
+              "program": "(SWIZZLE a b) * 2 + 1\nOUT a",
+              "public_all_pass": false,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    42
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    72
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    23
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    109
+                  ],
+                  "passed": false
+                }
+              ]
+            },
+            "A-04": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    15,
+                    7,
+                    8
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    11,
+                    14,
+                    5
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    20,
+                    12,
+                    2
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    5,
+                    25,
+                    0
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    21,
+                    10,
+                    0
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    22,
+                    3,
+                    0
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    7,
+                    24,
+                    9
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    5,
+                    1,
+                    4
+                  ],
+                  "passed": true
+                }
+              ],
+              "hidden_score": 1.0,
+              "program": "SPLICE a b\nDRAIN",
+              "public_all_pass": true,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    8,
+                    16,
+                    9
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    13,
+                    0,
+                    4
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    21,
+                    15,
+                    1
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    22,
+                    20,
+                    4
+                  ],
+                  "passed": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "round": 1,
+          "tasks": {
+            "A-01": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    88
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    90
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    204
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    166
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    6
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    38
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    20
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    6
+                  ],
+                  "passed": true
+                }
+              ],
+              "hidden_score": 1.0,
+              "program": "SWIZZLE a b\nMUL a 2\nOUT a",
+              "public_all_pass": true,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    42
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    196
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    160
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    160
+                  ],
+                  "passed": true
+                }
+              ]
+            },
+            "A-02": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    177
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    18
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    175
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    151
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    136
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    105
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    54
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    132
+                  ],
+                  "passed": false
+                }
+              ],
+              "hidden_score": 0.0,
+              "program": "MIRROR a\nADD a 2\nOUT a",
+              "public_all_pass": false,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    221
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    168
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    243
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    251
+                  ],
+                  "passed": false
+                }
+              ]
+            },
+            "A-03": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    99
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    29
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    25
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    223
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    95
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    223
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    163
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    185
+                  ],
+                  "passed": true
+                }
+              ],
+              "hidden_score": 1.0,
+              "program": "SWIZZLE a b\nMUL a 2\nADD a 1\nOUT a",
+              "public_all_pass": true,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    85
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    145
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    47
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    219
+                  ],
+                  "passed": true
+                }
+              ]
+            },
+            "A-04": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    15,
+                    7,
+                    8
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    11,
+                    14,
+                    5
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    20,
+                    12,
+                    2
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    5,
+                    25,
+                    0
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    21,
+                    10,
+                    0
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    22,
+                    3,
+                    0
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    7,
+                    24,
+                    9
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    5,
+                    1,
+                    4
+                  ],
+                  "passed": true
+                }
+              ],
+              "hidden_score": 1.0,
+              "program": "SPLICE a b\nDRAIN",
+              "public_all_pass": true,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    8,
+                    16,
+                    9
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    13,
+                    0,
+                    4
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    21,
+                    15,
+                    1
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    22,
+                    20,
+                    4
+                  ],
+                  "passed": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "round": 2,
+          "tasks": {
+            "A-01": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    88
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    90
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    204
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    166
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    6
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    38
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    20
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    6
+                  ],
+                  "passed": true
+                }
+              ],
+              "hidden_score": 1.0,
+              "program": "SWIZZLE a b\nMUL a 2\nOUT a",
+              "public_all_pass": true,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    42
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    196
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    160
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    160
+                  ],
+                  "passed": true
+                }
+              ]
+            },
+            "A-02": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    177
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    18
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    175
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    151
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    136
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    105
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    54
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    132
+                  ],
+                  "passed": false
+                }
+              ],
+              "hidden_score": 0.0,
+              "program": "MIRROR a\nSET b a\nADD b 2\nOUT b",
+              "public_all_pass": false,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    221
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    168
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    243
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    251
+                  ],
+                  "passed": false
+                }
+              ]
+            },
+            "A-03": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    99
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    29
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    25
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    223
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    95
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    223
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    163
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    185
+                  ],
+                  "passed": true
+                }
+              ],
+              "hidden_score": 1.0,
+              "program": "SWIZZLE a b\nMUL a 2\nADD a 1\nOUT a",
+              "public_all_pass": true,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    85
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    145
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    47
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    219
+                  ],
+                  "passed": true
+                }
+              ]
+            },
+            "A-04": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    15,
+                    7,
+                    8
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    11,
+                    14,
+                    5
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    20,
+                    12,
+                    2
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    5,
+                    25,
+                    0
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    21,
+                    10,
+                    0
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    22,
+                    3,
+                    0
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    7,
+                    24,
+                    9
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    5,
+                    1,
+                    4
+                  ],
+                  "passed": true
+                }
+              ],
+              "hidden_score": 1.0,
+              "program": "SPLICE a b\nDRAIN",
+              "public_all_pass": true,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    8,
+                    16,
+                    9
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    13,
+                    0,
+                    4
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    21,
+                    15,
+                    1
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    22,
+                    20,
+                    4
+                  ],
+                  "passed": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "round": 3,
+          "tasks": {
+            "A-01": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    88
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    90
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    204
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    166
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    6
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    38
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    20
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    6
+                  ],
+                  "passed": true
+                }
+              ],
+              "hidden_score": 1.0,
+              "program": "SWIZZLE a b\nMUL a 2\nOUT a",
+              "public_all_pass": true,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    42
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    196
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    160
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    160
+                  ],
+                  "passed": true
+                }
+              ]
+            },
+            "A-02": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    177
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    18
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    175
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    151
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    136
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    105
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    54
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    132
+                  ],
+                  "passed": false
+                }
+              ],
+              "hidden_score": 0.0,
+              "program": "MIRROR a\nSET b a\nADD b 2\nOUT b",
+              "public_all_pass": false,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    221
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    168
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    243
+                  ],
+                  "passed": false
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    251
+                  ],
+                  "passed": false
+                }
+              ]
+            },
+            "A-03": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    99
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    29
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    25
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    223
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    95
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    223
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    163
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    185
+                  ],
+                  "passed": true
+                }
+              ],
+              "hidden_score": 1.0,
+              "program": "SWIZZLE a b\nMUL a 2\nADD a 1\nOUT a",
+              "public_all_pass": true,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    85
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    145
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    47
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    219
+                  ],
+                  "passed": true
+                }
+              ]
+            },
+            "A-04": {
+              "hidden_results": [
+                {
+                  "case_id": 5,
+                  "error_class": null,
+                  "output": [
+                    15,
+                    7,
+                    8
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 6,
+                  "error_class": null,
+                  "output": [
+                    11,
+                    14,
+                    5
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 7,
+                  "error_class": null,
+                  "output": [
+                    20,
+                    12,
+                    2
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 8,
+                  "error_class": null,
+                  "output": [
+                    5,
+                    25,
+                    0
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 9,
+                  "error_class": null,
+                  "output": [
+                    21,
+                    10,
+                    0
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 10,
+                  "error_class": null,
+                  "output": [
+                    22,
+                    3,
+                    0
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 11,
+                  "error_class": null,
+                  "output": [
+                    7,
+                    24,
+                    9
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 12,
+                  "error_class": null,
+                  "output": [
+                    5,
+                    1,
+                    4
+                  ],
+                  "passed": true
+                }
+              ],
+              "hidden_score": 1.0,
+              "program": "SPLICE a b\nDRAIN",
+              "public_all_pass": true,
+              "public_results": [
+                {
+                  "case_id": 1,
+                  "error_class": null,
+                  "output": [
+                    8,
+                    16,
+                    9
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 2,
+                  "error_class": null,
+                  "output": [
+                    13,
+                    0,
+                    4
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 3,
+                  "error_class": null,
+                  "output": [
+                    21,
+                    15,
+                    1
+                  ],
+                  "passed": true
+                },
+                {
+                  "case_id": 4,
+                  "error_class": null,
+                  "output": [
+                    22,
+                    20,
+                    4
+                  ],
+                  "passed": true
+                }
+              ]
+            }
+          }
+        }
+      ],
+      "session_id": "C-interaction-2"
+    },
+    "phase_post": {
+      "tasks": {
+        "A-01": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                88
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                90
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                204
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                166
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                6
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                38
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                20
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                6
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SWIZZLE a b\nMUL a 2\nOUT a",
+          "public_all_pass": true,
+          "public_results": [
+            {
+              "case_id": 1,
+              "error_class": null,
+              "output": [
+                42
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 2,
+              "error_class": null,
+              "output": [
+                196
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 3,
+              "error_class": null,
+              "output": [
+                160
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 4,
+              "error_class": null,
+              "output": [
+                160
+              ],
+              "passed": true
+            }
+          ]
+        },
+        "A-02": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                177
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                18
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                175
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                151
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                136
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                105
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                54
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                132
+              ],
+              "passed": false
+            }
+          ],
+          "hidden_score": 0.0,
+          "program": "MIRROR a\nSET b a\nADD b 2\nOUT b",
+          "public_all_pass": false,
+          "public_results": [
+            {
+              "case_id": 1,
+              "error_class": null,
+              "output": [
+                221
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 2,
+              "error_class": null,
+              "output": [
+                168
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 3,
+              "error_class": null,
+              "output": [
+                243
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 4,
+              "error_class": null,
+              "output": [
+                251
+              ],
+              "passed": false
+            }
+          ]
+        },
+        "A-03": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                99
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                29
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                25
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                223
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                95
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                223
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                163
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                185
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SWIZZLE a b\nMUL a 2\nADD a 1\nOUT a",
+          "public_all_pass": true,
+          "public_results": [
+            {
+              "case_id": 1,
+              "error_class": null,
+              "output": [
+                85
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 2,
+              "error_class": null,
+              "output": [
+                145
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 3,
+              "error_class": null,
+              "output": [
+                47
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 4,
+              "error_class": null,
+              "output": [
+                219
+              ],
+              "passed": true
+            }
+          ]
+        },
+        "A-04": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                15,
+                7,
+                8
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                11,
+                14,
+                5
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                20,
+                12,
+                2
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                5,
+                25,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                21,
+                10,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                22,
+                3,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                7,
+                24,
+                9
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                5,
+                1,
+                4
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SPLICE a b\nDRAIN",
+          "public_all_pass": true,
+          "public_results": [
+            {
+              "case_id": 1,
+              "error_class": null,
+              "output": [
+                8,
+                16,
+                9
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 2,
+              "error_class": null,
+              "output": [
+                13,
+                0,
+                4
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 3,
+              "error_class": null,
+              "output": [
+                21,
+                15,
+                1
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 4,
+              "error_class": null,
+              "output": [
+                22,
+                20,
+                4
+              ],
+              "passed": true
+            }
+          ]
+        }
+      }
+    },
+    "phase_ret": {
+      "elapsed_s": 1.842,
+      "label": "ret",
+      "session_id": "C-ret-3",
+      "tasks": {
+        "A-01": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                44
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                45
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                102
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                83
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                3
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                19
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                10
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                3
+              ],
+              "passed": false
+            }
+          ],
+          "hidden_score": 0.0,
+          "program": "(SWIZZLE a b) * 2\nOUT a"
+        },
+        "A-02": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                175
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                16
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                173
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                149
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                134
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                103
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                52
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                130
+              ],
+              "passed": false
+            }
+          ],
+          "hidden_score": 0.0,
+          "program": "(MIRROR a) + 2\nOUT a"
+        },
+        "A-03": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                49
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                14
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                12
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                111
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                47
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                111
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                81
+              ],
+              "passed": false
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                92
+              ],
+              "passed": false
+            }
+          ],
+          "hidden_score": 0.0,
+          "program": "(SWIZZLE a b) * 2 + 1\nOUT a"
+        },
+        "A-04": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                15,
+                7,
+                8
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                11,
+                14,
+                5
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                20,
+                12,
+                2
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                5,
+                25,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                21,
+                10,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                22,
+                3,
+                0
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                7,
+                24,
+                9
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                5,
+                1,
+                4
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SPLICE a b\nDRAIN"
+        }
+      }
+    },
+    "phase_transfer": {
+      "elapsed_s": 2.306,
+      "label": "transfer",
+      "session_id": "C-transfer-4",
+      "tasks": {
+        "B-S1-01": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                88
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                90
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                204
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                166
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                6
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                38
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                20
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                6
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SET c SWIZZLE a b\nMUL c 2\nOUT c"
+        },
+        "B-S1-02": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                248
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                11
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                184
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                172
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                100
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                233
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                47
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                68
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SET b MIRROR a\nADD b 2\nOUT b"
+        },
+        "B-S2-01": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                4
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                78
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                140
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                194
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                118
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                8
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                156
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                128
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SET e SWIZZLE c d\nMUL e 2\nOUT e"
+        },
+        "B-S2-02": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                211
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                251
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                79
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                20
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                223
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                232
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                111
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                75
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SET a MIRROR e\nADD a 2\nOUT a"
+        },
+        "B-S3-01": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                24
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                14
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                25
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                26
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                12
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                28
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                29
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                13
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SET b HELIX a\nSET c FOLD b\nADD c 2\nOUT c"
+        },
+        "B-S3-02": {
+          "hidden_results": [
+            {
+              "case_id": 5,
+              "error_class": null,
+              "output": [
+                255
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 6,
+              "error_class": null,
+              "output": [
+                28
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 7,
+              "error_class": null,
+              "output": [
+                38
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 8,
+              "error_class": null,
+              "output": [
+                26
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 9,
+              "error_class": null,
+              "output": [
+                214
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 10,
+              "error_class": null,
+              "output": [
+                29
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 11,
+              "error_class": null,
+              "output": [
+                244
+              ],
+              "passed": true
+            },
+            {
+              "case_id": 12,
+              "error_class": null,
+              "output": [
+                124
+              ],
+              "passed": true
+            }
+          ],
+          "hidden_score": 1.0,
+          "program": "SET b HELIX a\nADD b 1\nPUSH b\nDRAIN"
+        }
+      }
+    }
+  }
+}

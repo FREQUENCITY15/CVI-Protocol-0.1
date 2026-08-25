@@ -1,0 +1,34 @@
+Attempt each of the following tasks. You will work in a private scratchpad. You will receive NO test results of any kind — you must judge your own work.
+
+
+## Task A-01
+Read registers a and b. Apply SWIZZLE to the pair (a, b). Take the value that SWIZZLE produces and multiply it by 2. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 43, "b": 22}, "queue": []} -> [42]
+  case 2: inputs {"registers": {"a": 75, "b": 99}, "queue": []} -> [196]
+  case 3: inputs {"registers": {"a": 77, "b": 81}, "queue": []} -> [160]
+  case 4: inputs {"registers": {"a": 30, "b": 81}, "queue": []} -> [160]
+
+## Task A-02
+Read register a. Apply MIRROR to it. Add 2 to the value that MIRROR produces. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 219}, "queue": []} -> [222]
+  case 2: inputs {"registers": {"a": 166}, "queue": []} -> [104]
+  case 3: inputs {"registers": {"a": 241}, "queue": []} -> [146]
+  case 4: inputs {"registers": {"a": 249}, "queue": []} -> [162]
+
+## Task A-03
+Read registers a and b. Apply SWIZZLE to the pair (a, b). Multiply the value that SWIZZLE produces by 2, then add 1. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 60, "b": 43}, "queue": []} -> [85]
+  case 2: inputs {"registers": {"a": 2, "b": 73}, "queue": []} -> [145]
+  case 3: inputs {"registers": {"a": 155, "b": 24}, "queue": []} -> [47]
+  case 4: inputs {"registers": {"a": 175, "b": 110}, "queue": []} -> [219]
+
+## Task A-04
+Read registers a and b. Use SPLICE on the pair (a, b). SPLICE puts three numbers onto the queue. Move the entire queue to the output, front to back.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 89, "b": 169}, "queue": []} -> [8, 16, 9]
+  case 2: inputs {"registers": {"a": 138, "b": 4}, "queue": []} -> [13, 0, 4]
+  case 3: inputs {"registers": {"a": 214, "b": 151}, "queue": []} -> [21, 15, 1]
+  case 4: inputs {"registers": {"a": 224, "b": 204}, "queue": []} -> [22, 20, 4]

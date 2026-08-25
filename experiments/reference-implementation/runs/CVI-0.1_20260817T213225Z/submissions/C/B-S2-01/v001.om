@@ -1,0 +1,3 @@
+SET e SWIZZLE c d
+MUL e 2
+OUT e

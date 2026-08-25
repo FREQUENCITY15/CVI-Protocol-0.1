@@ -1,0 +1,4 @@
+MIRROR a
+SET b a
+ADD b 2
+OUT b

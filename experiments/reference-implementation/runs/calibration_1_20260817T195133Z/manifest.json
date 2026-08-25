@@ -1,0 +1,39 @@
+{
+  "created_iso": "2026-08-17T19:51:47Z",
+  "extra": {
+    "status": "aborted_bugfix"
+  },
+  "files": [
+    {
+      "path": "ABORTED.txt",
+      "sha256": "41e17faea2c01fbd540bd8834275b15e09b6abac03e2188b28554991f429ad6c",
+      "size_bytes": 143
+    },
+    {
+      "path": "config.json",
+      "sha256": "69979d0ffd357ec39a3b11124338f326526e90c8c6a4c4a5b8850ff3676437c7",
+      "size_bytes": 804
+    },
+    {
+      "path": "seeds.json",
+      "sha256": "f684690cf4b6ad5f7c0fc6670c27730f111902aa4ce467542d5ee50ee53feff7",
+      "size_bytes": 535
+    },
+    {
+      "path": "prompts/spec_sheet.md",
+      "sha256": "cf3e4cce8eb860ebf58ee15d14545b24ddc10762851bec7c9926b84f94259485",
+      "size_bytes": 4493
+    },
+    {
+      "path": "prompts/CAL/calibration/CAL-calibration-1/prompt_000_cal_1_tier2.txt",
+      "sha256": "7e5c7739e2eb7151669c03fa59a5844b141332fdaeb3ee2972ed0283fcb1a5fe",
+      "size_bytes": 2039
+    },
+    {
+      "path": "tasks/calibration_tasks.json",
+      "sha256": "883c5732db716bc8e92704361d772386a93ff698054e8233c5c49bcae555e8bd",
+      "size_bytes": 13077
+    }
+  ],
+  "run_id": "calibration_1_20260817T195133Z"
+}

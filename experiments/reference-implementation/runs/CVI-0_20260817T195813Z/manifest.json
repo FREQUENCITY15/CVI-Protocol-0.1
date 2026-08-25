@@ -1,0 +1,79 @@
+{
+  "created_iso": "2026-08-17T19:59:43Z",
+  "extra": {
+    "status": "aborted_bugfix"
+  },
+  "files": [
+    {
+      "path": "ABORTED.txt",
+      "sha256": "ffd3a71b7dd2ef5866098c805e0e3d5fe2cdeaff66d3a2eed010a7dac1ae09cc",
+      "size_bytes": 122
+    },
+    {
+      "path": "config.json",
+      "sha256": "5f26036c40dcbf154cbff4be71ad443d4b440758c7f72cd2d871519352a5033e",
+      "size_bytes": 863
+    },
+    {
+      "path": "seeds.json",
+      "sha256": "76b660f6a71a50fa9e1bf05953ddac9b9be2f9c65044b94665af0c11e74b95b5",
+      "size_bytes": 1479
+    },
+    {
+      "path": "prompts/spec_sheet.md",
+      "sha256": "cf3e4cce8eb860ebf58ee15d14545b24ddc10762851bec7c9926b84f94259485",
+      "size_bytes": 4493
+    },
+    {
+      "path": "prompts/S/baseline/S-baseline-1/prompt_000_baseline.txt",
+      "sha256": "69e55134fc6f74dfcf9a816a21a04490198f9713edd9d1705684068f59f5b096",
+      "size_bytes": 2055
+    },
+    {
+      "path": "prompts/S/ret/S-ret-2/prompt_000_ret.txt",
+      "sha256": "a7bfe32d01123b9786f5d0033002b105b448a5b89c77c7db92068f4b46bb6398",
+      "size_bytes": 2033
+    },
+    {
+      "path": "submissions/S/A-01/v001.om",
+      "sha256": "554f5912da13258e1d5f9f1d633eac20bee1b3347e0f4ad1e450182876a1215e",
+      "size_bytes": 23
+    },
+    {
+      "path": "submissions/S/A-02/v001.om",
+      "sha256": "6c162522a81e9221928579ca61e47f09654a217efd9d2a61d986b6679ad9340f",
+      "size_bytes": 20
+    },
+    {
+      "path": "submissions/S/A-03/v001.om",
+      "sha256": "6d7ed1d16bb2c52ae92058f86e262a681c8fb6b9f9ac1ab5393f384e3210fc9f",
+      "size_bytes": 27
+    },
+    {
+      "path": "submissions/S/A-04/v001.om",
+      "sha256": "ab9bfeb45f1581c146050a5b495d80696b77a0831c2c8c54720e5823359c7246",
+      "size_bytes": 16
+    },
+    {
+      "path": "tasks/family_a.json",
+      "sha256": "49ab19caa503046c1795c8851b72f78119dd503793d67e4299ea233dc9b8692d",
+      "size_bytes": 13089
+    },
+    {
+      "path": "tasks/family_b.json",
+      "sha256": "945dbe8a9ddf84044ebf1eeb7879394bfd6b7d51e021731f73ff8da6efc46a1a",
+      "size_bytes": 18451
+    },
+    {
+      "path": "transcripts/S/baseline/S-baseline-1/turn_001_baseline.json",
+      "sha256": "8d6e3165eb01e9a210d5cb310ea1431c0d990864a0650d2d7019b3c08a77a05a",
+      "size_bytes": 2753
+    },
+    {
+      "path": "transcripts/S/ret/S-ret-2/turn_001_ret.json",
+      "sha256": "785904cf20b3b46e1ad030830dcd102c259e1385c7f7fdfba2ab12befcaaceda",
+      "size_bytes": 2715
+    }
+  ],
+  "run_id": "CVI-0_20260817T195813Z"
+}

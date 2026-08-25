@@ -1,0 +1,4 @@
+HELIX a
+ADD a 1
+PUSH a
+DRAIN

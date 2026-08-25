@@ -1,0 +1,3 @@
+SET c SWIZZLE a b
+MUL c 2
+OUT c

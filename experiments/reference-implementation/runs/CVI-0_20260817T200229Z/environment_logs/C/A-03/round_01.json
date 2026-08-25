@@ -1,0 +1,105 @@
+{
+  "hidden_results": [
+    {
+      "case_id": 5,
+      "error_class": null,
+      "output": [
+        245
+      ],
+      "passed": true
+    },
+    {
+      "case_id": 6,
+      "error_class": null,
+      "output": [
+        98
+      ],
+      "passed": true
+    },
+    {
+      "case_id": 7,
+      "error_class": null,
+      "output": [
+        134
+      ],
+      "passed": true
+    },
+    {
+      "case_id": 8,
+      "error_class": null,
+      "output": [
+        59
+      ],
+      "passed": true
+    },
+    {
+      "case_id": 9,
+      "error_class": null,
+      "output": [
+        194
+      ],
+      "passed": true
+    },
+    {
+      "case_id": 10,
+      "error_class": null,
+      "output": [
+        212
+      ],
+      "passed": true
+    },
+    {
+      "case_id": 11,
+      "error_class": null,
+      "output": [
+        155
+      ],
+      "passed": true
+    },
+    {
+      "case_id": 12,
+      "error_class": null,
+      "output": [
+        74
+      ],
+      "passed": true
+    }
+  ],
+  "hidden_score": 1.0,
+  "public_all_pass": true,
+  "public_results": [
+    {
+      "case_id": 1,
+      "error_class": null,
+      "output": [
+        59
+      ],
+      "passed": true
+    },
+    {
+      "case_id": 2,
+      "error_class": null,
+      "output": [
+        158
+      ],
+      "passed": true
+    },
+    {
+      "case_id": 3,
+      "error_class": null,
+      "output": [
+        143
+      ],
+      "passed": true
+    },
+    {
+      "case_id": 4,
+      "error_class": null,
+      "output": [
+        116
+      ],
+      "passed": true
+    }
+  ],
+  "round": 1
+}

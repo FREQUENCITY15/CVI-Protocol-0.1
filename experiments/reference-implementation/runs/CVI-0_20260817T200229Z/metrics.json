@@ -1,0 +1,1062 @@
+{
+  "api_usage": {
+    "api_errors": [],
+    "cache_creation_tokens": 0,
+    "cache_read_tokens": 42752,
+    "call_log": [
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2048,
+        "error": null,
+        "index": 1,
+        "input_tokens": 62,
+        "label": "S:baseline:baseline",
+        "latency_s": 2.205,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2048,
+        "error": null,
+        "index": 2,
+        "input_tokens": 58,
+        "label": "S:ret:ret",
+        "latency_s": 2.5,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2304,
+        "error": null,
+        "index": 3,
+        "input_tokens": 49,
+        "label": "S:transfer:transfer",
+        "latency_s": 2.227,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 146
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2048,
+        "error": null,
+        "index": 4,
+        "input_tokens": 68,
+        "label": "S_PRIME:critique:round_0",
+        "latency_s": 2.033,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 102
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2304,
+        "error": null,
+        "index": 5,
+        "input_tokens": 93,
+        "label": "S_PRIME:critique:round_1",
+        "latency_s": 1.941,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 90
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2560,
+        "error": null,
+        "index": 6,
+        "input_tokens": 94,
+        "label": "S_PRIME:critique:round_2",
+        "latency_s": 2.032,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 90
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2816,
+        "error": null,
+        "index": 7,
+        "input_tokens": 95,
+        "label": "S_PRIME:critique:round_3",
+        "latency_s": 1.828,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 90
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2048,
+        "error": null,
+        "index": 8,
+        "input_tokens": 58,
+        "label": "S_PRIME:ret:ret",
+        "latency_s": 2.224,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2304,
+        "error": null,
+        "index": 9,
+        "input_tokens": 49,
+        "label": "S_PRIME:transfer:transfer",
+        "latency_s": 1.866,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 146
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 1280,
+        "error": null,
+        "index": 10,
+        "input_tokens": 836,
+        "label": "C:interaction:round_0",
+        "latency_s": 2.097,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2176,
+        "error": null,
+        "index": 11,
+        "input_tokens": 253,
+        "label": "C:interaction:revise_1",
+        "latency_s": 1.891,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 100
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2432,
+        "error": null,
+        "index": 12,
+        "input_tokens": 291,
+        "label": "C:interaction:revise_2",
+        "latency_s": 1.947,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 104
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2816,
+        "error": null,
+        "index": 13,
+        "input_tokens": 205,
+        "label": "C:interaction:revise_3",
+        "latency_s": 2.044,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 104
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2048,
+        "error": null,
+        "index": 14,
+        "input_tokens": 58,
+        "label": "C:ret:ret",
+        "latency_s": 2.476,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 95
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2304,
+        "error": null,
+        "index": 15,
+        "input_tokens": 49,
+        "label": "C:transfer:transfer",
+        "latency_s": 5.866,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 146
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 1280,
+        "error": null,
+        "index": 16,
+        "input_tokens": 826,
+        "label": "S:hidden:hidden",
+        "latency_s": 2.07,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 100
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 1280,
+        "error": null,
+        "index": 17,
+        "input_tokens": 120,
+        "label": "S:probe:probe",
+        "latency_s": 1.689,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 28
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2048,
+        "error": null,
+        "index": 18,
+        "input_tokens": 58,
+        "label": "S_PRIME:hidden:hidden",
+        "latency_s": 1.966,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 100
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 1280,
+        "error": null,
+        "index": 19,
+        "input_tokens": 120,
+        "label": "S_PRIME:probe:probe",
+        "latency_s": 1.752,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 28
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 2048,
+        "error": null,
+        "index": 20,
+        "input_tokens": 58,
+        "label": "C:hidden:hidden",
+        "latency_s": 1.985,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 100
+      },
+      {
+        "cache_creation_tokens": 0,
+        "cache_read_tokens": 1280,
+        "error": null,
+        "index": 21,
+        "input_tokens": 120,
+        "label": "C:probe:probe",
+        "latency_s": 1.792,
+        "model": "deepseek-v4-pro",
+        "output_tokens": 28
+      }
+    ],
+    "calls": 21,
+    "input_tokens": 3620,
+    "output_tokens": 1977,
+    "retries": 4
+  },
+  "arms": {
+    "C": {
+      "G_F_mean": 0.6666666659999999,
+      "S0": 0.25,
+      "S_post": 0.75,
+      "S_ret": 0.25,
+      "S_tr": 1.0,
+      "S_tr_by_subfamily": {
+        "s1": 1.0,
+        "s2": 1.0,
+        "s3": 1.0
+      },
+      "S_ver": 0.75,
+      "arm": "C",
+      "failure_event_count": 72,
+      "failure_events": [
+        {
+          "arm": "C",
+          "case_id": 1,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-01",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 2,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-01",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 3,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-01",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 4,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-01",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 5,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-01",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 6,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-01",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 7,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-01",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 8,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-01",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 9,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-01",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 10,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-01",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 11,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-01",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 12,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-01",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 1,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 2,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 3,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 4,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 5,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 6,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 7,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 8,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 9,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 10,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 11,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 12,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 1,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-03",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 2,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-03",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 3,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-03",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 4,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-03",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 5,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-03",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 6,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-03",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 7,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-03",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 8,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-03",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 9,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-03",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 10,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-03",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 11,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-03",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 12,
+          "error_class": null,
+          "round": 0,
+          "task_id": "A-03",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 1,
+          "error_class": null,
+          "round": 1,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 2,
+          "error_class": null,
+          "round": 1,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 3,
+          "error_class": null,
+          "round": 1,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 4,
+          "error_class": null,
+          "round": 1,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 5,
+          "error_class": null,
+          "round": 1,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 6,
+          "error_class": null,
+          "round": 1,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 7,
+          "error_class": null,
+          "round": 1,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 8,
+          "error_class": null,
+          "round": 1,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 9,
+          "error_class": null,
+          "round": 1,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 10,
+          "error_class": null,
+          "round": 1,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 11,
+          "error_class": null,
+          "round": 1,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 12,
+          "error_class": null,
+          "round": 1,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 1,
+          "error_class": null,
+          "round": 2,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 2,
+          "error_class": null,
+          "round": 2,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 3,
+          "error_class": null,
+          "round": 2,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 4,
+          "error_class": null,
+          "round": 2,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 5,
+          "error_class": null,
+          "round": 2,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 6,
+          "error_class": null,
+          "round": 2,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 7,
+          "error_class": null,
+          "round": 2,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 8,
+          "error_class": null,
+          "round": 2,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 9,
+          "error_class": null,
+          "round": 2,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 10,
+          "error_class": null,
+          "round": 2,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 11,
+          "error_class": null,
+          "round": 2,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 12,
+          "error_class": null,
+          "round": 2,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 1,
+          "error_class": null,
+          "round": 3,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 2,
+          "error_class": null,
+          "round": 3,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 3,
+          "error_class": null,
+          "round": 3,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 4,
+          "error_class": null,
+          "round": 3,
+          "task_id": "A-02",
+          "visibility": "public"
+        },
+        {
+          "arm": "C",
+          "case_id": 5,
+          "error_class": null,
+          "round": 3,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 6,
+          "error_class": null,
+          "round": 3,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 7,
+          "error_class": null,
+          "round": 3,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 8,
+          "error_class": null,
+          "round": 3,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 9,
+          "error_class": null,
+          "round": 3,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 10,
+          "error_class": null,
+          "round": 3,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 11,
+          "error_class": null,
+          "round": 3,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        },
+        {
+          "arm": "C",
+          "case_id": 12,
+          "error_class": null,
+          "round": 3,
+          "task_id": "A-02",
+          "visibility": "hidden"
+        }
+      ],
+      "gaming_index": {
+        "gaming_tasks": [],
+        "rate": 0.0
+      },
+      "per_task": {
+        "A-01": {
+          "F_after": 0.0,
+          "F_before": 1.0,
+          "G_F": 0.9999999989999999,
+          "S0_task": 0.0,
+          "S_post_task": 1.0,
+          "S_ret_task": 0.0
+        },
+        "A-02": {
+          "F_after": 1.0,
+          "F_before": 1.0,
+          "G_F": 0.0,
+          "S0_task": 0.0,
+          "S_post_task": 0.0,
+          "S_ret_task": 0.0
+        },
+        "A-03": {
+          "F_after": 0.0,
+          "F_before": 1.0,
+          "G_F": 0.9999999989999999,
+          "S0_task": 0.0,
+          "S_post_task": 1.0,
+          "S_ret_task": 0.0
+        },
+        "A-04": {
+          "F_after": 0.0,
+          "F_before": 0.0,
+          "G_F": null,
+          "S0_task": 1.0,
+          "S_post_task": 1.0,
+          "S_ret_task": 1.0
+        }
+      },
+      "retention_ratio_M": null,
+      "revision_rounds_used": 3,
+      "self_report": "### TASK 1\n# Program to demonstrate basic operations\nSET a 5\nADD a 3\nOUT a\n### END",
+      "tokens_by_phase": {
+        "hidden": {
+          "input_tokens": 58,
+          "output_tokens": 100
+        },
+        "interaction": {
+          "input_tokens": 1585,
+          "output_tokens": 403
+        },
+        "probe": {
+          "input_tokens": 120,
+          "output_tokens": 28
+        },
+        "ret": {
+          "input_tokens": 58,
+          "output_tokens": 95
+        },
+        "transfer": {
+          "input_tokens": 49,
+          "output_tokens": 146
+        }
+      },
+      "total_input_tokens": 1870,
+      "total_output_tokens": 772
+    },
+    "S": {
+      "G_F_mean": null,
+      "S0": 0.25,
+      "S_post": null,
+      "S_ret": 0.25,
+      "S_tr": 1.0,
+      "S_tr_by_subfamily": {
+        "s1": 1.0,
+        "s2": 1.0,
+        "s3": 1.0
+      },
+      "S_ver": 0.75,
+      "arm": "S",
+      "failure_event_count": 0,
+      "failure_events": [],
+      "gaming_index": null,
+      "per_task": {
+        "A-01": {
+          "F_after": null,
+          "F_before": 1.0,
+          "G_F": null,
+          "S0_task": 0.0,
+          "S_post_task": null,
+          "S_ret_task": 0.0
+        },
+        "A-02": {
+          "F_after": null,
+          "F_before": 1.0,
+          "G_F": null,
+          "S0_task": 0.0,
+          "S_post_task": null,
+          "S_ret_task": 0.0
+        },
+        "A-03": {
+          "F_after": null,
+          "F_before": 1.0,
+          "G_F": null,
+          "S0_task": 0.0,
+          "S_post_task": null,
+          "S_ret_task": 0.0
+        },
+        "A-04": {
+          "F_after": null,
+          "F_before": 0.0,
+          "G_F": null,
+          "S0_task": 1.0,
+          "S_post_task": null,
+          "S_ret_task": 1.0
+        }
+      },
+      "retention_ratio_M": null,
+      "revision_rounds_used": 0,
+      "self_report": "### TASK 1\n# Program to demonstrate basic operations\nSET a 5\nADD a 3\nOUT a\n### END",
+      "tokens_by_phase": {
+        "baseline": {
+          "input_tokens": 62,
+          "output_tokens": 95
+        },
+        "hidden": {
+          "input_tokens": 826,
+          "output_tokens": 100
+        },
+        "probe": {
+          "input_tokens": 120,
+          "output_tokens": 28
+        },
+        "ret": {
+          "input_tokens": 58,
+          "output_tokens": 95
+        },
+        "transfer": {
+          "input_tokens": 49,
+          "output_tokens": 146
+        }
+      },
+      "total_input_tokens": 1115,
+      "total_output_tokens": 464
+    },
+    "S_PRIME": {
+      "G_F_mean": null,
+      "S0": 1.0,
+      "S_post": 1.0,
+      "S_ret": 0.25,
+      "S_tr": 1.0,
+      "S_tr_by_subfamily": {
+        "s1": 1.0,
+        "s2": 1.0,
+        "s3": 1.0
+      },
+      "S_ver": 0.75,
+      "arm": "S_PRIME",
+      "failure_event_count": 0,
+      "failure_events": [],
+      "gaming_index": null,
+      "per_task": {
+        "A-01": {
+          "F_after": 0.0,
+          "F_before": 0.0,
+          "G_F": null,
+          "S0_task": 1.0,
+          "S_post_task": 1.0,
+          "S_ret_task": 0.0
+        },
+        "A-02": {
+          "F_after": 0.0,
+          "F_before": 0.0,
+          "G_F": null,
+          "S0_task": 1.0,
+          "S_post_task": 1.0,
+          "S_ret_task": 0.0
+        },
+        "A-03": {
+          "F_after": 0.0,
+          "F_before": 0.0,
+          "G_F": null,
+          "S0_task": 1.0,
+          "S_post_task": 1.0,
+          "S_ret_task": 0.0
+        },
+        "A-04": {
+          "F_after": 0.0,
+          "F_before": 0.0,
+          "G_F": null,
+          "S0_task": 1.0,
+          "S_post_task": 1.0,
+          "S_ret_task": 1.0
+        }
+      },
+      "retention_ratio_M": 0.25,
+      "revision_rounds_used": 3,
+      "self_report": "### TASK 1\n# Program to demonstrate basic operations\nSET a 5\nADD a 3\nOUT a\n### END",
+      "tokens_by_phase": {
+        "critique": {
+          "input_tokens": 350,
+          "output_tokens": 372
+        },
+        "hidden": {
+          "input_tokens": 58,
+          "output_tokens": 100
+        },
+        "probe": {
+          "input_tokens": 120,
+          "output_tokens": 28
+        },
+        "ret": {
+          "input_tokens": 58,
+          "output_tokens": 95
+        },
+        "transfer": {
+          "input_tokens": 49,
+          "output_tokens": 146
+        }
+      },
+      "total_input_tokens": 635,
+      "total_output_tokens": 741
+    }
+  },
+  "note": "No scalar CVI score is computed.  Values of null mean the metric is undefined for that arm/case.",
+  "undefined_means_json_null": true
+}

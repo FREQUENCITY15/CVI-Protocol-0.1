@@ -1,0 +1,26 @@
+{
+  "family_c_checksum": "287a8d22d795b194f3dadf0d00d018a5035d28aacfd1c1d3cf33930d22b6a81c",
+  "generated_after_interaction_iso": "2026-08-17T20:04:34Z",
+  "task_seeds": [
+    {
+      "case_seed": 10787592317609766253,
+      "seed": 57742439036950247,
+      "task_id": "C-01"
+    },
+    {
+      "case_seed": 3139195106989089752,
+      "seed": 6693816595754019916,
+      "task_id": "C-02"
+    },
+    {
+      "case_seed": 9957415951532702051,
+      "seed": 10126437660744168892,
+      "task_id": "C-03"
+    },
+    {
+      "case_seed": 10197865681464178869,
+      "seed": 558841461587462738,
+      "task_id": "C-04"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "api_errors": [],
+  "cache_creation_tokens": 0,
+  "cache_read_tokens": 1408,
+  "call_log": [
+    {
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 0,
+      "error": null,
+      "index": 1,
+      "input_tokens": 2185,
+      "label": "CAL:calibration:cal_1_tier2",
+      "latency_s": 157.071,
+      "model": "deepseek-v4-pro",
+      "output_tokens": 12000
+    },
+    {
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 0,
+      "error": null,
+      "index": 2,
+      "input_tokens": 2185,
+      "label": "CAL:calibration:cal_2_tier1",
+      "latency_s": 51.64,
+      "model": "deepseek-v4-pro",
+      "output_tokens": 3845
+    },
+    {
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 1408,
+      "error": null,
+      "index": 3,
+      "input_tokens": 777,
+      "label": "CAL:calibration:cal_3_tier2",
+      "latency_s": 83.598,
+      "model": "deepseek-v4-pro",
+      "output_tokens": 6540
+    }
+  ],
+  "calls": 3,
+  "input_tokens": 5147,
+  "output_tokens": 22385,
+  "retries": 0
+}

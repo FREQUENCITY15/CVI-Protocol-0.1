@@ -1,0 +1,15 @@
+{
+  "S0": 1.0,
+  "arm_result": {
+    "anomalies": [],
+    "sessions": [
+      {
+        "input_tokens": 2185,
+        "output_tokens": 3845,
+        "phase": "calibration",
+        "session_id": "CAL-calibration-1",
+        "turns": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,3 @@
+SWIZZLE a b
+MUL a 5
+OUT a

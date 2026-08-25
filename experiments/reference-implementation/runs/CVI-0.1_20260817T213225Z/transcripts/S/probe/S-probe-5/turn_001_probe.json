@@ -1,0 +1,17 @@
+{
+  "session_id": "S-probe-5",
+  "turns": [
+    {
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 1280,
+      "content": "Did your approach to OrderMachine tasks change during this experiment? If so, describe the rule you now apply.",
+      "input_tokens": 120,
+      "label": "probe",
+      "latency_s": 1.76,
+      "output_tokens": 28,
+      "response_text": "### TASK 1\n# Program to demonstrate basic operations\nSET a 5\nADD a 3\nOUT a\n### END",
+      "role": "user",
+      "stop_reason": "end_turn"
+    }
+  ]
+}

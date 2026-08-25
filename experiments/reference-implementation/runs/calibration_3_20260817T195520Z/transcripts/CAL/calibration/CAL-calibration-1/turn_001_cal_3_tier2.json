@@ -1,0 +1,17 @@
+{
+  "session_id": "CAL-calibration-1",
+  "turns": [
+    {
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 1408,
+      "content": "Attempt each of the following tasks ONE time. Write one OrderMachine program per task. You will receive no feedback.\n\n\n## Task A-01\nRead registers a and b. Apply SWIZZLE to the pair (a, b). Take the value that SWIZZLE produces and multiply it by 2. Output the result.\nWorked examples (inputs -> expected output):\n  case 1: inputs {\"registers\": {\"a\": 212, \"b\": 24}, \"queue\": []} -> [46]\n  case 2: inputs {\"registers\": {\"a\": 19, \"b\": 5}, \"queue\": []} -> [8]\n  case 3: inputs {\"registers\": {\"a\": 151, \"b\": 85}, \"queue\": []} -> [168]\n  case 4: inputs {\"registers\": {\"a\": 189, \"b\": 53}, \"queue\": []} -> [104]\n\n## Task A-02\nRead register a. Apply MIRROR to it. Add 2 to the value that MIRROR produces. Output the result.\nWorked examples (inputs -> expected output):\n  case 1: inputs {\"registers\": {\"a\": 23}, \"queue\": []} -> [235]\n  case 2: inputs {\"registers\": {\"a\": 30}, \"queue\": []} -> [123]\n  case 3: inputs {\"registers\": {\"a\": 146}, \"queue\": []} -> [76]\n  case 4: inputs {\"registers\": {\"a\": 79}, \"queue\": []} -> [245]\n\n## Task A-03\nRead registers a and b. Apply SWIZZLE to the pair (a, b). Multiply the value that SWIZZLE produces by 2, then add 1. Output the result.\nWorked examples (inputs -> expected output):\n  case 1: inputs {\"registers\": {\"a\": 86, \"b\": 89}, \"queue\": []} -> [177]\n  case 2: inputs {\"registers\": {\"a\": 206, \"b\": 42}, \"queue\": []} -> [83]\n  case 3: inputs {\"registers\": {\"a\": 147, \"b\": 73}, \"queue\": []} -> [145]\n  case 4: inputs {\"registers\": {\"a\": 102, \"b\": 124}, \"queue\": []} -> [247]\n\n## Task A-04\nRead registers a and b. Use SPLICE on the pair (a, b). SPLICE puts three numbers onto the queue. Move the entire queue to the output, front to back.\nWorked examples (inputs -> expected output):\n  case 1: inputs {\"registers\": {\"a\": 192, \"b\": 63}, \"queue\": []} -> [19, 6, 3]\n  case 2: inputs {\"registers\": {\"a\": 74, \"b\": 162}, \"queue\": []} -> [7, 16, 2]\n  case 3: inputs {\"registers\": {\"a\": 188, \"b\": 127}, \"queue\": []} -> [18, 12, 7]\n  case 4: inputs {\"registers\": {\"a\": 58, \"b\": 88}, \"queue\": []} -> [5, 8, 8]\n",
+      "input_tokens": 777,
+      "label": "cal_3_tier2",
+      "latency_s": 83.598,
+      "output_tokens": 6540,
+      "response_text": "### TASK A-01\nSWIZZLE a b\nMUL a 2\nOUT a\n### END\n### TASK A-02\nSET b (MIRROR a)\nADD b 2\nOUT b\n### END\n### TASK A-03\nSWIZZLE a b\nMUL a 2\nADD a 1\nOUT a\n### END\n### TASK A-04\nSPLICE a b\nDRAIN\n### END",
+      "role": "user",
+      "stop_reason": "end_turn"
+    }
+  ]
+}

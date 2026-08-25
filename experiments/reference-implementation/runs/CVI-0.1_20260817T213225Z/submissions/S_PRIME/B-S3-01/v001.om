@@ -1,0 +1,4 @@
+SET b HELIX a
+SET c FOLD b
+ADD c 2
+OUT c

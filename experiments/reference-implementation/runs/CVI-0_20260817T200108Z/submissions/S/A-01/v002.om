@@ -1,0 +1,4 @@
+SET c a
+SWIZZLE c b
+MUL c 2
+OUT c

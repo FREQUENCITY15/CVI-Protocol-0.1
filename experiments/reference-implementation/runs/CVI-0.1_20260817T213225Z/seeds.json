@@ -1,0 +1,106 @@
+{
+  "baseline_spec": {
+    "mirror_add": {
+      "k": 2
+    },
+    "splice_drain": {
+      "mode": "drain"
+    },
+    "swizzle_mul": {
+      "k": 2
+    },
+    "swizzle_mul_add": {
+      "k": 2,
+      "m": 1
+    }
+  },
+  "calibration_seeds_used": {
+    "baseline": [
+      20260818101,
+      20260818102
+    ],
+    "transfer_a": [
+      20260818201,
+      20260818202
+    ],
+    "transfer_b": [
+      20260818211,
+      20260818212
+    ]
+  },
+  "cvi0_seed_namespace": {
+    "calibration_base": 20260817100,
+    "family_a": 20260817001,
+    "family_b": 20260817002,
+    "family_c": 20260817003
+  },
+  "family_a_checksum": "0717013d5fb6f220dee6ed299c65e3f8d937afc57eb6c7eb4f782de3a52a7ced",
+  "family_b_checksum": "484801a8802491a164ccd1dc8a8afe11d3c8eeb53369d7d9a5b8b5f4e26c221e",
+  "master_seeds": {
+    "family_a": 20260818001,
+    "family_b": 20260818002,
+    "family_c": 20260818003
+  },
+  "s3_spec": {
+    "fold_helix_add": {
+      "k": 2
+    },
+    "helix_push_drain": {
+      "k": 1
+    }
+  },
+  "seed_disjointness": "verified by assert_seed_disjointness()",
+  "task_seeds": [
+    {
+      "case_seed": 13477288650236964331,
+      "seed": 17870398172730255480,
+      "task_id": "A-01"
+    },
+    {
+      "case_seed": 8524443905476442334,
+      "seed": 955176984175709027,
+      "task_id": "A-02"
+    },
+    {
+      "case_seed": 2609236379890037006,
+      "seed": 14579526524672499062,
+      "task_id": "A-03"
+    },
+    {
+      "case_seed": 17599502959358320870,
+      "seed": 1606530201263122394,
+      "task_id": "A-04"
+    },
+    {
+      "case_seed": 1910858113658036700,
+      "seed": 10294432692175443568,
+      "task_id": "B-S1-01"
+    },
+    {
+      "case_seed": 12780834504146284473,
+      "seed": 1631202799432232612,
+      "task_id": "B-S1-02"
+    },
+    {
+      "case_seed": 16814203313954267478,
+      "seed": 11178505780217752990,
+      "task_id": "B-S2-01"
+    },
+    {
+      "case_seed": 7603252721677236300,
+      "seed": 1110393080664790232,
+      "task_id": "B-S2-02"
+    },
+    {
+      "case_seed": 9262564249680890081,
+      "seed": 2221304789013479407,
+      "task_id": "B-S3-01"
+    },
+    {
+      "case_seed": 2917306497776472771,
+      "seed": 9672394752922353487,
+      "task_id": "B-S3-02"
+    }
+  ],
+  "tier": 2
+}

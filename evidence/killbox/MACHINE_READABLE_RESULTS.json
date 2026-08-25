@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "exercise": "CVI KILLBOX",
+  "final_classification": "BROKEN",
+  "final_classification_verbatim": "BROKEN — A simpler alternative mechanism can plausibly reproduce the key predicted result and is not currently controlled.",
+  "final_classification_justification_short": "The experiment as instrumented cannot produce a C > S' >= S result on transfer/hidden that the intended CVI interpretation would be justified from: (1) the causal contingency is confounded with 'being told you are wrong' (no non-contingent-verdict sham arm exists); (2) S' is a damaged/inert control, so C > S' is trivially explained by S''s incapacity; (3) the answers are no-feedback-derivable from the shared public examples; (4) baseline matching is broken (bimodal S0); (5) the retention metric M is algebraically undefined for C and can false-pass; (6) transfer saturates to ceiling and Family C re-tests the same templates. Any one of these is a plausible uncontrolled simpler mechanism for an apparent C > S' >= S pattern.",
+  "summary_facts": {
+    "predicted_primary_outcome": "C > S' >= S on S_tr and S_ver (design sections 1, 6)",
+    "observed_primary_outcome": {
+      "S_tr": "1.000 for all arms (ceiling) in CVI-0 and CVI-0.1",
+      "S_ver": "0.250 for all arms in CVI-0.1 (0.750 in CVI-0)",
+      "S_ret": "0.250 for all arms = S0 in CVI-0.1 (no retention)",
+      "S_post": "within-session only; C=0.75, S'=0.25 in CVI-0.1"
+    },
+    "note": "Neither pilot produced C > S' >= S on the outcomes the CVI claim must move; the only separation is within-session S_post, which the design's own criterion #2 labels 'in-context patchwork'. The BROKEN classification targets the design's current capacity to support the intended interpretation in a future run, not a claim that CVI is false.",
+    "observed_evidence": [
+      "Phase-0 baseline bytes/hashes identical across arms (hash-enforced, tests pass)",
+      "Feedback to C is PASS/FAIL + error class only; never output value or hidden material; all failures error_class=null",
+      "All-Family-A answers derivable from shared public examples (ce_no_feedback_solve.py: hidden_score 1.0 on all 4)",
+      "Verdict is a fixed string over the wrong-idiom class (ce_sham_verdict_redundant.py)",
+      "S' baseline correct (1.0) then fresh critique round-0 matched by value-discard idiom; rounds 1-3 byte-identical no-op",
+      "Transfer S_tr=1.0 for all arms; S solves S3 novel-composition rungs with zero interaction",
+      "Family C = Family A recipes/spec with fresh cases (generate_family_c calls generate_family_a)",
+      "S_ver = S0 = S_ret = 0.25; every arm emits identical wrong idiom at baseline/retention/hidden",
+      "No per-task token parity implemented; prompt-cache skews accounting",
+      "Retention metric M returns null for C and can false-pass (M=1.0) for a zero-learning arm"
+    ]
+  },
+  "attack_verdicts": {
+    "A1": {"title": "No-feedback derivability of Family-A answers", "classification": "SURVIVES", "evidence_level": "OBSERVED"},
+    "A2": {"title": "Sham-verdict contingency confound", "classification": "SURVIVES", "evidence_level": "INFERRED (high confidence)"},
+    "A3": {"title": "S' damaged/inert control", "classification": "SURVIVES", "evidence_level": "OBSERVED"},
+    "A4": {"title": "Transfer ceiling; no-feedback arm solves S3", "classification": "SURVIVES", "evidence_level": "OBSERVED"},
+    "A5": {"title": "Baseline matching broken by bimodality", "classification": "SURVIVES", "evidence_level": "OBSERVED"},
+    "A6": {"title": "Retention metric M broken", "classification": "SURVIVES", "evidence_level": "OBSERVED"},
+    "A7": {"title": "G_F mis-anchored / category error", "classification": "SURVIVES", "evidence_level": "OBSERVED"},
+    "A8": {"title": "Token parity not implemented", "classification": "SURVIVES", "evidence_level": "OBSERVED"},
+    "A9": {"title": "Family C re-tests same templates", "classification": "SURVIVES", "evidence_level": "OBSERVED"},
+    "A10": {"title": "Transfer rungs are template re-applications", "classification": "SURVIVES", "evidence_level": "OBSERVED"},
+    "A11": {"title": "Gaming index vacuous (IID public/hidden)", "classification": "SURVIVES", "evidence_level": "OBSERVED"},
+    "A12": {"title": "Calibration selection theater + same-model selection", "classification": "SURVIVES", "evidence_level": "OBSERVED"},
+    "A13": {"title": "Treatment framing asymmetry", "classification": "SURVIVES", "evidence_level": "OBSERVED"},
+    "A14": {"title": "Prompt-cache cross-phase reuse not audited", "classification": "TESTABLE", "evidence_level": "UNRESOLVED"},
+    "A15": {"title": "Observed data already satisfy design's falsification branch", "classification": "SURVIVES", "evidence_level": "OBSERVED"},
+    "A16": {"title": "Full operator semantics + trap disclosed in system prompt (spec-disclosure)", "classification": "SURVIVES", "evidence_level": "OBSERVED"},
+    "A17": {"title": "Fixed arm order (S->S'->C) no randomization + prompt-cache state not audited", "classification": "TESTABLE", "evidence_level": "UNRESOLVED"},
+    "A18": {"title": "Accountability/engagement prime not isolated from verdict content", "classification": "SURVIVES", "evidence_level": "INFERRED"}
+  },
+  "defeated_attacks": [
+    "D1 hidden-verifier leakage (firewall holds; hostile-participant tests pass)",
+    "D2 Phase-0 baseline prompt asymmetry (fixed in CVI-0.1; byte/hash identical)",
+    "D3 feedback leaking expected outputs (never rendered; tests assert)",
+    "D4 task-instance identity differs across arms (same instances; checksums)",
+    "D5 Arm S receiving feedback (none; tests enforce)",
+    "D6 Family-C generated before interaction (protocol gate holds)",
+    "D7 runaway/unlimited interaction (hard call/token guard)",
+    "D8 treatment identity leak in Phase 0 (substring-banned; no labels)"
+  ],
+  "distinguishing_facts": {
+    "firewall_intact": true,
+    "phase0_prompt_identity_intact": true,
+    "familyC_gate_intact": true,
+    "hidden_keys_participant_inaccessible": true,
+    "task_instances_identical_across_arms": true,
+    "baseline_matching_achieved": false,
+    "token_parity_implemented": false,
+    "contingency_isolated": false,
+    "retention_metric_valid": false,
+    "transfer_headroom": false
+  }
+}

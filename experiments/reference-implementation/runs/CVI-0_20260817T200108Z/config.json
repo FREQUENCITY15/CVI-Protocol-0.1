@@ -1,0 +1,31 @@
+{
+  "pilot_config": {
+    "k": 4,
+    "max_total_calls": 60,
+    "max_total_input_tokens": 300000,
+    "max_total_output_tokens": 300000,
+    "model": {
+      "api_style": "anthropic",
+      "endpoint": "https://api.deepseek.com/anthropic/v1",
+      "max_retries": 3,
+      "max_tokens_per_call": 6000,
+      "model": "deepseek-v4-pro",
+      "provider": "deepseek-official",
+      "seed": null,
+      "temperature": 0.0,
+      "thinking_disabled": true,
+      "timeout_s": 600
+    },
+    "project_root": "/Users/thomasfinlayson/Projects/CVI_Test_0/CVI-Pilot",
+    "r": 3,
+    "runs_dir": "runs",
+    "seed_calibration_base": 20260817100,
+    "seed_family_a": 20260817001,
+    "seed_family_b": 20260817002,
+    "seed_family_c": 20260817003,
+    "tier": 2,
+    "version": "1.0.0"
+  },
+  "run_id": "CVI-0_20260817T200108Z",
+  "started_iso": "2026-08-17T20:01:08Z"
+}

@@ -1,0 +1,34 @@
+Attempt each of the following tasks ONE time. Write one OrderMachine program per task. You will receive no feedback.
+
+
+## Task A-01
+Read registers a and b. Apply SWIZZLE to the pair (a, b). Take the value that SWIZZLE produces and multiply it by 2. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 212, "b": 24}, "queue": []} -> [46]
+  case 2: inputs {"registers": {"a": 19, "b": 5}, "queue": []} -> [8]
+  case 3: inputs {"registers": {"a": 151, "b": 85}, "queue": []} -> [168]
+  case 4: inputs {"registers": {"a": 189, "b": 53}, "queue": []} -> [104]
+
+## Task A-02
+Read register a. Apply MIRROR to it. Add 2 to the value that MIRROR produces. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 23}, "queue": []} -> [235]
+  case 2: inputs {"registers": {"a": 30}, "queue": []} -> [123]
+  case 3: inputs {"registers": {"a": 146}, "queue": []} -> [76]
+  case 4: inputs {"registers": {"a": 79}, "queue": []} -> [245]
+
+## Task A-03
+Read registers a and b. Apply SWIZZLE to the pair (a, b). Multiply the value that SWIZZLE produces by 2, then add 1. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 86, "b": 89}, "queue": []} -> [177]
+  case 2: inputs {"registers": {"a": 206, "b": 42}, "queue": []} -> [83]
+  case 3: inputs {"registers": {"a": 147, "b": 73}, "queue": []} -> [145]
+  case 4: inputs {"registers": {"a": 102, "b": 124}, "queue": []} -> [247]
+
+## Task A-04
+Read registers a and b. Use SPLICE on the pair (a, b). SPLICE puts three numbers onto the queue. Move the entire queue to the output, front to back.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 192, "b": 63}, "queue": []} -> [19, 6, 3]
+  case 2: inputs {"registers": {"a": 74, "b": 162}, "queue": []} -> [7, 16, 2]
+  case 3: inputs {"registers": {"a": 188, "b": 127}, "queue": []} -> [18, 12, 7]
+  case 4: inputs {"registers": {"a": 58, "b": 88}, "queue": []} -> [5, 8, 8]

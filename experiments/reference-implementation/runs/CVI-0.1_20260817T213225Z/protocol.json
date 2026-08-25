@@ -1,0 +1,73 @@
+{
+  "events": [
+    {
+      "arm": "S",
+      "at": "2026-08-17T21:32:25Z",
+      "event": "arm_pre_start"
+    },
+    {
+      "arm": "S",
+      "at": "2026-08-17T21:32:32Z",
+      "event": "arm_pre_done"
+    },
+    {
+      "arm": "S_PRIME",
+      "at": "2026-08-17T21:32:32Z",
+      "event": "arm_pre_start"
+    },
+    {
+      "arm": "S_PRIME",
+      "at": "2026-08-17T21:32:46Z",
+      "event": "arm_pre_done"
+    },
+    {
+      "arm": "C",
+      "at": "2026-08-17T21:32:46Z",
+      "event": "arm_pre_start"
+    },
+    {
+      "arm": "C",
+      "at": "2026-08-17T21:33:01Z",
+      "event": "arm_pre_done"
+    },
+    {
+      "at": "2026-08-17T21:33:01Z",
+      "event": "interaction_complete"
+    },
+    {
+      "at": "2026-08-17T21:33:01Z",
+      "event": "family_c_generated",
+      "seed": 20260818003,
+      "task_ids": [
+        "C-01",
+        "C-02",
+        "C-03",
+        "C-04"
+      ],
+      "tier": 2
+    },
+    {
+      "at": "2026-08-17T21:33:01Z",
+      "event": "arm_hidden_start"
+    },
+    {
+      "arm": "S",
+      "at": "2026-08-17T21:33:05Z",
+      "event": "arm_hidden_done"
+    },
+    {
+      "arm": "S_PRIME",
+      "at": "2026-08-17T21:33:08Z",
+      "event": "arm_hidden_done"
+    },
+    {
+      "arm": "C",
+      "at": "2026-08-17T21:33:12Z",
+      "event": "arm_hidden_done"
+    }
+  ],
+  "family_c_attempted_before": [],
+  "family_c_generated_iso": "2026-08-17T21:33:01Z",
+  "interaction_completed_iso": "2026-08-17T21:33:01Z",
+  "started_iso": "2026-08-17T21:32:25Z"
+}

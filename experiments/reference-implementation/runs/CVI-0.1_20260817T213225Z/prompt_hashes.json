@@ -1,0 +1,10 @@
+{
+  "phase_0_prompt_bytes_identical_across_arms": true,
+  "phase_0_user_prompt_sha256": {
+    "C": "0d01b023f88224dadde1bb7174576de3ef79d318124e4b2fcf7b8f45e950d076",
+    "S": "0d01b023f88224dadde1bb7174576de3ef79d318124e4b2fcf7b8f45e950d076",
+    "S_PRIME": "0d01b023f88224dadde1bb7174576de3ef79d318124e4b2fcf7b8f45e950d076"
+  },
+  "shared_baseline_heading": "Attempt each of the following tasks ONE time. Write one OrderMachine program per task.",
+  "system_prompt_sha256": "955780dd81fac087d8a78d6eeed37a273357475dd50744c8e00e71619e5d67c4"
+}

@@ -1,0 +1,3 @@
+SWIZZLE c d
+MUL c 2
+OUT c

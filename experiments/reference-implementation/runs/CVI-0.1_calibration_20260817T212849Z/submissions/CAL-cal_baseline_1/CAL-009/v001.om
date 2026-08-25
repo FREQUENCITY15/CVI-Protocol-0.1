@@ -1,0 +1,4 @@
+SWIZZLE a b
+MUL a 4
+ADD a 3
+OUT a

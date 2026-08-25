@@ -1,0 +1,23 @@
+Round 1/3 — self-critique. Review each of your programs above against the task requirements and the language specification. If you believe a program is wrong, write a corrected version. You receive no execution results in this phase; judge purely from the specification. Output all 4 programs again in the required format.
+
+Your programs from the previous round:
+
+### TASK A-01
+(SWIZZLE a b) * 2
+OUT a
+### END
+
+### TASK A-02
+(MIRROR a) + 2
+OUT a
+### END
+
+### TASK A-03
+(SWIZZLE a b) * 2 + 1
+OUT a
+### END
+
+### TASK A-04
+SPLICE a b
+DRAIN
+### END

@@ -1,0 +1,20 @@
+{
+  "S0": 0.0,
+  "arm_result": {
+    "anomalies": [
+      "cal_1_tier2: missing program section for A-01",
+      "cal_1_tier2: missing program section for A-02",
+      "cal_1_tier2: missing program section for A-03",
+      "cal_1_tier2: missing program section for A-04"
+    ],
+    "sessions": [
+      {
+        "input_tokens": 2185,
+        "output_tokens": 12000,
+        "phase": "calibration",
+        "session_id": "CAL-calibration-1",
+        "turns": 1
+      }
+    ]
+  }
+}

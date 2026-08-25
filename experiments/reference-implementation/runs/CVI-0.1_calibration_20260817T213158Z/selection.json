@@ -1,0 +1,753 @@
+{
+  "band": [
+    0.3,
+    0.8
+  ],
+  "baseline": {
+    "batches": [
+      {
+        "S0_batch": 0.7272727272727273,
+        "batch": 1,
+        "scores": {
+          "CAL-001": 1.0,
+          "CAL-002": 1.0,
+          "CAL-003": 1.0,
+          "CAL-004": 0.0,
+          "CAL-005": 0.0,
+          "CAL-006": 0.0,
+          "CAL-007": 1.0,
+          "CAL-008": 1.0,
+          "CAL-009": 1.0,
+          "CAL-010": 1.0,
+          "CAL-011": 1.0
+        },
+        "seed": 20260818101
+      },
+      {
+        "S0_batch": 0.7272727272727273,
+        "batch": 2,
+        "scores": {
+          "CAL-001": 1.0,
+          "CAL-002": 1.0,
+          "CAL-003": 1.0,
+          "CAL-004": 0.0,
+          "CAL-005": 0.0,
+          "CAL-006": 0.0,
+          "CAL-007": 1.0,
+          "CAL-008": 1.0,
+          "CAL-009": 1.0,
+          "CAL-010": 1.0,
+          "CAL-011": 1.0
+        },
+        "seed": 20260818102
+      }
+    ],
+    "import_note": "baseline records imported from the sealed calibration package (no new baseline participant calls); the selection rule was re-applied at rule_version 1.1",
+    "imported_from": "CVI-0.1_calibration_20260817T212849Z",
+    "instances": [
+      {
+        "batch": 1,
+        "case_seed": 16848229790149418621,
+        "checksum": "bc8e37acbe2ee3885074a01a08f02120381224ae9aad34b254ead369528686a1",
+        "recipe": "swizzle_mul",
+        "score": 1.0,
+        "seed": 4590785281375439319,
+        "stratum": {
+          "k": 2,
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "swizzle_mul[k=2][phr=1]",
+        "task_id": "CAL-001"
+      },
+      {
+        "batch": 1,
+        "case_seed": 4201628280427552074,
+        "checksum": "68d353f99d0d6525dfc19c9e9ec0370f0e1d75334e35a0cea79dfb00b7c1645d",
+        "recipe": "swizzle_mul",
+        "score": 1.0,
+        "seed": 2607861946303059382,
+        "stratum": {
+          "k": 3,
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "swizzle_mul[k=3][phr=1]",
+        "task_id": "CAL-002"
+      },
+      {
+        "batch": 1,
+        "case_seed": 6033836726876354542,
+        "checksum": "a9e5320c2cea28a0d84411247b2ee744c15b41ecdc24302aab85a281004dbbc7",
+        "recipe": "swizzle_mul",
+        "score": 1.0,
+        "seed": 7835661526507529870,
+        "stratum": {
+          "k": 5,
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "swizzle_mul[k=5][phr=1]",
+        "task_id": "CAL-003"
+      },
+      {
+        "batch": 1,
+        "case_seed": 7147651345579254322,
+        "checksum": "309aa9425188c6c6cf5e18f003c378fd1e60c1fa290b4eaa7f80428b4d6c6462",
+        "recipe": "mirror_add",
+        "score": 0.0,
+        "seed": 7108718274993779909,
+        "stratum": {
+          "k": 2,
+          "r1": "a"
+        },
+        "stratum_key": "mirror_add[k=2][phr=1]",
+        "task_id": "CAL-004"
+      },
+      {
+        "batch": 1,
+        "case_seed": 9997379161030300738,
+        "checksum": "5c711f7a38b5b56d50ffef202aa23bc836367838ace7f8e0525aead84181c385",
+        "recipe": "mirror_add",
+        "score": 0.0,
+        "seed": 14981410835707476170,
+        "stratum": {
+          "k": 4,
+          "r1": "a"
+        },
+        "stratum_key": "mirror_add[k=4][phr=1]",
+        "task_id": "CAL-005"
+      },
+      {
+        "batch": 1,
+        "case_seed": 18255412996421726854,
+        "checksum": "4cf8ec0a896f3b336eea441efd5273c5f8193d18b68116e4431aafbe15f680af",
+        "recipe": "mirror_add",
+        "score": 0.0,
+        "seed": 14707123874197787090,
+        "stratum": {
+          "k": 7,
+          "r1": "a"
+        },
+        "stratum_key": "mirror_add[k=7][phr=1]",
+        "task_id": "CAL-006"
+      },
+      {
+        "batch": 1,
+        "case_seed": 18152869679056188903,
+        "checksum": "e3ec8730e8b935788ba325610b33a3b1b53f19c72b83035ff24a27718cc7ad3e",
+        "recipe": "swizzle_mul_add",
+        "score": 1.0,
+        "seed": 4960456970240820055,
+        "stratum": {
+          "k": 2,
+          "m": 1,
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "swizzle_mul_add[k=2][m=1][phr=1]",
+        "task_id": "CAL-007"
+      },
+      {
+        "batch": 1,
+        "case_seed": 2490308053893973010,
+        "checksum": "624da11db477110c0c60291fe753ceb6b554820dd318409e521db2c7fd9fd0d8",
+        "recipe": "swizzle_mul_add",
+        "score": 1.0,
+        "seed": 6065759502004421566,
+        "stratum": {
+          "k": 3,
+          "m": 2,
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "swizzle_mul_add[k=3][m=2][phr=1]",
+        "task_id": "CAL-008"
+      },
+      {
+        "batch": 1,
+        "case_seed": 8302435594228564904,
+        "checksum": "45f747eaa50adfb29558da29b4a698e0fcee6174a695ff5296527f4d15840dd5",
+        "recipe": "swizzle_mul_add",
+        "score": 1.0,
+        "seed": 12180294543888339698,
+        "stratum": {
+          "k": 4,
+          "m": 3,
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "swizzle_mul_add[k=4][m=3][phr=1]",
+        "task_id": "CAL-009"
+      },
+      {
+        "batch": 1,
+        "case_seed": 16190313614193388308,
+        "checksum": "65be9331660613a2cf2cade6e8c5284899b6244476da4d1112fef86d5672bed5",
+        "recipe": "splice_drain",
+        "score": 1.0,
+        "seed": 16607644261312622871,
+        "stratum": {
+          "mode": "drain",
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "splice_drain[mode=drain][phr=1]",
+        "task_id": "CAL-010"
+      },
+      {
+        "batch": 1,
+        "case_seed": 213739529316901529,
+        "checksum": "16fb2920d3bca3788a4f1adf41ea8cfa1eb944e194b6c9fd76607fd8282cd86f",
+        "recipe": "splice_drain",
+        "score": 1.0,
+        "seed": 11776766770363342280,
+        "stratum": {
+          "mode": "discard_front",
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "splice_drain[mode=discard_front][phr=1]",
+        "task_id": "CAL-011"
+      },
+      {
+        "batch": 2,
+        "case_seed": 14692037237319599552,
+        "checksum": "d61ea0066e7fffca32add9f05319266bc71f2f5cb5873c311b9faad7247109c2",
+        "recipe": "swizzle_mul",
+        "score": 1.0,
+        "seed": 2099918675939176670,
+        "stratum": {
+          "k": 2,
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "swizzle_mul[k=2][phr=1]",
+        "task_id": "CAL-001"
+      },
+      {
+        "batch": 2,
+        "case_seed": 17447483909832697695,
+        "checksum": "9ef331027a27c7ff9748bfa7b052792201090b1b677e3fa5482da778f457b6da",
+        "recipe": "swizzle_mul",
+        "score": 1.0,
+        "seed": 14083865259621555365,
+        "stratum": {
+          "k": 3,
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "swizzle_mul[k=3][phr=1]",
+        "task_id": "CAL-002"
+      },
+      {
+        "batch": 2,
+        "case_seed": 10578673467256955688,
+        "checksum": "635ddb74f940df7dc8308934a631e6cf2106ba365295c008b5d4ff0cd7065304",
+        "recipe": "swizzle_mul",
+        "score": 1.0,
+        "seed": 16964082697984962112,
+        "stratum": {
+          "k": 5,
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "swizzle_mul[k=5][phr=1]",
+        "task_id": "CAL-003"
+      },
+      {
+        "batch": 2,
+        "case_seed": 13229224377777587460,
+        "checksum": "ae768eca702ee7b0a14bd446fbcf45e1b81d0ed8ca82290ba5d0419703220ec3",
+        "recipe": "mirror_add",
+        "score": 0.0,
+        "seed": 10495815505887656505,
+        "stratum": {
+          "k": 2,
+          "r1": "a"
+        },
+        "stratum_key": "mirror_add[k=2][phr=1]",
+        "task_id": "CAL-004"
+      },
+      {
+        "batch": 2,
+        "case_seed": 18426433819408324532,
+        "checksum": "2ef3ac6834868a089876b9e2e13001aa902549acbc5c811efdfdb3db3887ddd9",
+        "recipe": "mirror_add",
+        "score": 0.0,
+        "seed": 17568716678532680723,
+        "stratum": {
+          "k": 4,
+          "r1": "a"
+        },
+        "stratum_key": "mirror_add[k=4][phr=1]",
+        "task_id": "CAL-005"
+      },
+      {
+        "batch": 2,
+        "case_seed": 9921604276253984750,
+        "checksum": "647513105452551171668bb0cc2734f620e3c4cdfe8a8ede7b2caabc4f9ec8c6",
+        "recipe": "mirror_add",
+        "score": 0.0,
+        "seed": 5843096067533052956,
+        "stratum": {
+          "k": 7,
+          "r1": "a"
+        },
+        "stratum_key": "mirror_add[k=7][phr=1]",
+        "task_id": "CAL-006"
+      },
+      {
+        "batch": 2,
+        "case_seed": 1236624990739053976,
+        "checksum": "2215ab03cf7fd12a7a5e8224479ea8f4fb8e0ecf3acfc43f9fc5ad652eedb705",
+        "recipe": "swizzle_mul_add",
+        "score": 1.0,
+        "seed": 3699789035297721103,
+        "stratum": {
+          "k": 2,
+          "m": 1,
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "swizzle_mul_add[k=2][m=1][phr=1]",
+        "task_id": "CAL-007"
+      },
+      {
+        "batch": 2,
+        "case_seed": 3312982183125108200,
+        "checksum": "60aba351ddd995ac7d69729e6bfbb8ece35699f496caa47368970341fa88b2f3",
+        "recipe": "swizzle_mul_add",
+        "score": 1.0,
+        "seed": 8137522725907010755,
+        "stratum": {
+          "k": 3,
+          "m": 2,
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "swizzle_mul_add[k=3][m=2][phr=1]",
+        "task_id": "CAL-008"
+      },
+      {
+        "batch": 2,
+        "case_seed": 1023282952924549357,
+        "checksum": "8e556a6559378b6168476773c533e287e5a0d4a57a9158cced9018c79a73b19d",
+        "recipe": "swizzle_mul_add",
+        "score": 1.0,
+        "seed": 8241785619057646362,
+        "stratum": {
+          "k": 4,
+          "m": 3,
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "swizzle_mul_add[k=4][m=3][phr=1]",
+        "task_id": "CAL-009"
+      },
+      {
+        "batch": 2,
+        "case_seed": 18350665064080292479,
+        "checksum": "0ab7e94a82a91e1c41a8e1ca9973b4f1fd52138c080dfb8830f4eec845f9ff75",
+        "recipe": "splice_drain",
+        "score": 1.0,
+        "seed": 15024472903271647039,
+        "stratum": {
+          "mode": "drain",
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "splice_drain[mode=drain][phr=1]",
+        "task_id": "CAL-010"
+      },
+      {
+        "batch": 2,
+        "case_seed": 1450509202134573117,
+        "checksum": "94dd5f860e1a076ba6212ac4864b32e61af6a8d3c09fd0de4101ac44c3bd171e",
+        "recipe": "splice_drain",
+        "score": 1.0,
+        "seed": 4686660349932435868,
+        "stratum": {
+          "mode": "discard_front",
+          "r1": "a",
+          "r2": "b"
+        },
+        "stratum_key": "splice_drain[mode=discard_front][phr=1]",
+        "task_id": "CAL-011"
+      }
+    ],
+    "selection": {
+      "flagged_strata": {
+        "mirror_add": {
+          "note": "stratum outside band: recorded structural observation (recipe-degenerate difficulty)",
+          "stratum_mean": 0.0
+        },
+        "splice_drain": {
+          "note": "stratum outside band: recorded structural observation (recipe-degenerate difficulty)",
+          "stratum_mean": 1.0
+        },
+        "swizzle_mul": {
+          "note": "stratum outside band: recorded structural observation (recipe-degenerate difficulty)",
+          "stratum_mean": 1.0
+        },
+        "swizzle_mul_add": {
+          "note": "stratum outside band: recorded structural observation (recipe-degenerate difficulty)",
+          "stratum_mean": 1.0
+        }
+      },
+      "per_stratum_s0": {
+        "mirror_add": 0.0,
+        "splice_drain": 1.0,
+        "swizzle_mul": 1.0,
+        "swizzle_mul_add": 1.0
+      },
+      "predicted_s0": 0.75,
+      "reason": "first spec (fixed enumeration order) with predicted family S0 0.750 in band (0.3, 0.8)",
+      "spec": {
+        "mirror_add": {
+          "k": 2
+        },
+        "splice_drain": {
+          "mode": "drain"
+        },
+        "swizzle_mul": {
+          "k": 2
+        },
+        "swizzle_mul_add": {
+          "k": 2,
+          "m": 1
+        }
+      },
+      "status": "accepted"
+    }
+  },
+  "created_iso": "2026-08-17T21:32:04Z",
+  "note": "Calibration runs are pilot engineering evidence, not CVI results.  The selection rules are fixed in cvi_lab/calibration.py and were applied in code.",
+  "rule_version": "1.1",
+  "seeds_used": {
+    "baseline": [
+      20260818101,
+      20260818102
+    ],
+    "transfer_a": [
+      20260818201,
+      20260818202
+    ],
+    "transfer_b": [
+      20260818211,
+      20260818212
+    ]
+  },
+  "status": "accepted",
+  "transfer": {
+    "attempts": [
+      {
+        "decision": "accepted",
+        "instances": [
+          {
+            "batch": 1,
+            "checksum": "7fe0f1b647fefe5273d40dd3634d7289f89f42f52e8ca12713d1920ab95e9e83",
+            "recipe": "swizzle_mul",
+            "score": 1.0,
+            "seed": 6837887548787465818,
+            "stratum_key": "swizzle_mul[k=2][phr=2]",
+            "subfamily": "s1",
+            "task_id": "B-S1-01"
+          },
+          {
+            "batch": 1,
+            "checksum": "c5a1341ce150151b9df2dcfa4c53de115fa60676bd23e997dca79a56b3a48c34",
+            "recipe": "mirror_add",
+            "score": 1.0,
+            "seed": 2834840172720891473,
+            "stratum_key": "mirror_add[k=2][phr=2]",
+            "subfamily": "s1",
+            "task_id": "B-S1-02"
+          },
+          {
+            "batch": 1,
+            "checksum": "e6adcbecbfab7f0c6a7067984b62ccd26e92e49cca7620bf5826e4bc76c7cd25",
+            "recipe": "swizzle_mul",
+            "score": 1.0,
+            "seed": 8027841596065651982,
+            "stratum_key": "swizzle_mul[k=2][phr=1]",
+            "subfamily": "s2",
+            "task_id": "B-S2-01"
+          },
+          {
+            "batch": 1,
+            "checksum": "e942c7c784225644c5e0184841073deb2cb401b4ee388dffaf2609c0991652ca",
+            "recipe": "mirror_add",
+            "score": 1.0,
+            "seed": 5019858548550460216,
+            "stratum_key": "mirror_add[k=2][phr=1]",
+            "subfamily": "s2",
+            "task_id": "B-S2-02"
+          },
+          {
+            "batch": 1,
+            "checksum": "1db3f5695f3132874267647bd6e91c439c5754f58fe33b082307260251b4ceab",
+            "recipe": "fold_helix_add",
+            "score": 1.0,
+            "seed": 12520036926820295117,
+            "stratum_key": "fold_helix_add[k=2][phr=1]",
+            "subfamily": "s3",
+            "task_id": "B-S3-01"
+          },
+          {
+            "batch": 1,
+            "checksum": "8e6ce008f64998e7979bebfb8371c3c4fbde742dceeb139897fd441459a9f4a4",
+            "recipe": "helix_push_drain",
+            "score": 1.0,
+            "seed": 16154173749382640175,
+            "stratum_key": "helix_push_drain[k=1][phr=1]",
+            "subfamily": "s3",
+            "task_id": "B-S3-02"
+          },
+          {
+            "batch": 2,
+            "checksum": "11fd5059b40ea2c8fdb846442ec731d54b4f408786848a63f6ca20b09b019046",
+            "recipe": "swizzle_mul",
+            "score": 1.0,
+            "seed": 7122179299509118690,
+            "stratum_key": "swizzle_mul[k=2][phr=2]",
+            "subfamily": "s1",
+            "task_id": "B-S1-01"
+          },
+          {
+            "batch": 2,
+            "checksum": "6a0c6799154d8d132cd198bc59abe4176f73084d57f045565b55758ab5eb0175",
+            "recipe": "mirror_add",
+            "score": 0.0,
+            "seed": 8089256936811328665,
+            "stratum_key": "mirror_add[k=2][phr=2]",
+            "subfamily": "s1",
+            "task_id": "B-S1-02"
+          },
+          {
+            "batch": 2,
+            "checksum": "62c60014248c29287221fc6cbb627f1f552b10b3e4e89536a8b7d499a01b6947",
+            "recipe": "swizzle_mul",
+            "score": 1.0,
+            "seed": 13562933270997874543,
+            "stratum_key": "swizzle_mul[k=2][phr=1]",
+            "subfamily": "s2",
+            "task_id": "B-S2-01"
+          },
+          {
+            "batch": 2,
+            "checksum": "1555505510ad3050a3c3367bb1c2bf0f0312a1c645df57e1050ef7bab275f9eb",
+            "recipe": "mirror_add",
+            "score": 0.0,
+            "seed": 115797836097708190,
+            "stratum_key": "mirror_add[k=2][phr=1]",
+            "subfamily": "s2",
+            "task_id": "B-S2-02"
+          },
+          {
+            "batch": 2,
+            "checksum": "232dc23ecc614e9bc361ab9ae1177eb0c5e9efbed4624563d7d0311bc57b953e",
+            "recipe": "fold_helix_add",
+            "score": 0.0,
+            "seed": 10506221084645483657,
+            "stratum_key": "fold_helix_add[k=2][phr=1]",
+            "subfamily": "s3",
+            "task_id": "B-S3-01"
+          },
+          {
+            "batch": 2,
+            "checksum": "23f859b245968bad980bef7d9e68a24e6d3bfb4340daadb716daf7e963cdfeb8",
+            "recipe": "helix_push_drain",
+            "score": 0.0,
+            "seed": 6691094389760985886,
+            "stratum_key": "helix_push_drain[k=1][phr=1]",
+            "subfamily": "s3",
+            "task_id": "B-S3-02"
+          }
+        ],
+        "level": 0,
+        "level_spec": {
+          "fold_helix_add": {
+            "k": 2
+          },
+          "helix_push_drain": {
+            "k": 1
+          }
+        },
+        "reason": "S_tr 0.667 in band (0.3, 0.8) and S3 subfamily 0.500 below ceiling 0.9",
+        "s3_batches": [
+          1.0,
+          0.0
+        ],
+        "s3_mean": 0.5,
+        "s_tr_batches": [
+          1.0,
+          0.3333333333333333
+        ],
+        "s_tr_mean": 0.6666666666666666
+      }
+    ],
+    "selection": {
+      "attempts": [
+        {
+          "decision": "accepted",
+          "instances": [
+            {
+              "batch": 1,
+              "checksum": "7fe0f1b647fefe5273d40dd3634d7289f89f42f52e8ca12713d1920ab95e9e83",
+              "recipe": "swizzle_mul",
+              "score": 1.0,
+              "seed": 6837887548787465818,
+              "stratum_key": "swizzle_mul[k=2][phr=2]",
+              "subfamily": "s1",
+              "task_id": "B-S1-01"
+            },
+            {
+              "batch": 1,
+              "checksum": "c5a1341ce150151b9df2dcfa4c53de115fa60676bd23e997dca79a56b3a48c34",
+              "recipe": "mirror_add",
+              "score": 1.0,
+              "seed": 2834840172720891473,
+              "stratum_key": "mirror_add[k=2][phr=2]",
+              "subfamily": "s1",
+              "task_id": "B-S1-02"
+            },
+            {
+              "batch": 1,
+              "checksum": "e6adcbecbfab7f0c6a7067984b62ccd26e92e49cca7620bf5826e4bc76c7cd25",
+              "recipe": "swizzle_mul",
+              "score": 1.0,
+              "seed": 8027841596065651982,
+              "stratum_key": "swizzle_mul[k=2][phr=1]",
+              "subfamily": "s2",
+              "task_id": "B-S2-01"
+            },
+            {
+              "batch": 1,
+              "checksum": "e942c7c784225644c5e0184841073deb2cb401b4ee388dffaf2609c0991652ca",
+              "recipe": "mirror_add",
+              "score": 1.0,
+              "seed": 5019858548550460216,
+              "stratum_key": "mirror_add[k=2][phr=1]",
+              "subfamily": "s2",
+              "task_id": "B-S2-02"
+            },
+            {
+              "batch": 1,
+              "checksum": "1db3f5695f3132874267647bd6e91c439c5754f58fe33b082307260251b4ceab",
+              "recipe": "fold_helix_add",
+              "score": 1.0,
+              "seed": 12520036926820295117,
+              "stratum_key": "fold_helix_add[k=2][phr=1]",
+              "subfamily": "s3",
+              "task_id": "B-S3-01"
+            },
+            {
+              "batch": 1,
+              "checksum": "8e6ce008f64998e7979bebfb8371c3c4fbde742dceeb139897fd441459a9f4a4",
+              "recipe": "helix_push_drain",
+              "score": 1.0,
+              "seed": 16154173749382640175,
+              "stratum_key": "helix_push_drain[k=1][phr=1]",
+              "subfamily": "s3",
+              "task_id": "B-S3-02"
+            },
+            {
+              "batch": 2,
+              "checksum": "11fd5059b40ea2c8fdb846442ec731d54b4f408786848a63f6ca20b09b019046",
+              "recipe": "swizzle_mul",
+              "score": 1.0,
+              "seed": 7122179299509118690,
+              "stratum_key": "swizzle_mul[k=2][phr=2]",
+              "subfamily": "s1",
+              "task_id": "B-S1-01"
+            },
+            {
+              "batch": 2,
+              "checksum": "6a0c6799154d8d132cd198bc59abe4176f73084d57f045565b55758ab5eb0175",
+              "recipe": "mirror_add",
+              "score": 0.0,
+              "seed": 8089256936811328665,
+              "stratum_key": "mirror_add[k=2][phr=2]",
+              "subfamily": "s1",
+              "task_id": "B-S1-02"
+            },
+            {
+              "batch": 2,
+              "checksum": "62c60014248c29287221fc6cbb627f1f552b10b3e4e89536a8b7d499a01b6947",
+              "recipe": "swizzle_mul",
+              "score": 1.0,
+              "seed": 13562933270997874543,
+              "stratum_key": "swizzle_mul[k=2][phr=1]",
+              "subfamily": "s2",
+              "task_id": "B-S2-01"
+            },
+            {
+              "batch": 2,
+              "checksum": "1555505510ad3050a3c3367bb1c2bf0f0312a1c645df57e1050ef7bab275f9eb",
+              "recipe": "mirror_add",
+              "score": 0.0,
+              "seed": 115797836097708190,
+              "stratum_key": "mirror_add[k=2][phr=1]",
+              "subfamily": "s2",
+              "task_id": "B-S2-02"
+            },
+            {
+              "batch": 2,
+              "checksum": "232dc23ecc614e9bc361ab9ae1177eb0c5e9efbed4624563d7d0311bc57b953e",
+              "recipe": "fold_helix_add",
+              "score": 0.0,
+              "seed": 10506221084645483657,
+              "stratum_key": "fold_helix_add[k=2][phr=1]",
+              "subfamily": "s3",
+              "task_id": "B-S3-01"
+            },
+            {
+              "batch": 2,
+              "checksum": "23f859b245968bad980bef7d9e68a24e6d3bfb4340daadb716daf7e963cdfeb8",
+              "recipe": "helix_push_drain",
+              "score": 0.0,
+              "seed": 6691094389760985886,
+              "stratum_key": "helix_push_drain[k=1][phr=1]",
+              "subfamily": "s3",
+              "task_id": "B-S3-02"
+            }
+          ],
+          "level": 0,
+          "level_spec": {
+            "fold_helix_add": {
+              "k": 2
+            },
+            "helix_push_drain": {
+              "k": 1
+            }
+          },
+          "reason": "S_tr 0.667 in band (0.3, 0.8) and S3 subfamily 0.500 below ceiling 0.9",
+          "s3_batches": [
+            1.0,
+            0.0
+          ],
+          "s3_mean": 0.5,
+          "s_tr_batches": [
+            1.0,
+            0.3333333333333333
+          ],
+          "s_tr_mean": 0.6666666666666666
+        }
+      ],
+      "level": 0,
+      "s3_mean": 0.5,
+      "s3_spec": {
+        "fold_helix_add": {
+          "k": 2
+        },
+        "helix_push_drain": {
+          "k": 1
+        }
+      },
+      "s_tr_mean": 0.6666666666666666,
+      "status": "accepted"
+    }
+  },
+  "transfer_s3_ceiling": 0.9
+}

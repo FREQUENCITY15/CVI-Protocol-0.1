@@ -1,0 +1,33 @@
+{
+  "api_errors": [],
+  "cache_creation_tokens": 0,
+  "cache_read_tokens": 2560,
+  "call_log": [
+    {
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 1280,
+      "error": null,
+      "index": 1,
+      "input_tokens": 2028,
+      "label": "CAL-cal_baseline_1:baseline:baseline",
+      "latency_s": 3.11,
+      "model": "deepseek-v4-pro",
+      "output_tokens": 285
+    },
+    {
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 1280,
+      "error": null,
+      "index": 2,
+      "input_tokens": 2028,
+      "label": "CAL-cal_baseline_2:baseline:baseline",
+      "latency_s": 3.108,
+      "model": "deepseek-v4-pro",
+      "output_tokens": 285
+    }
+  ],
+  "calls": 2,
+  "input_tokens": 4056,
+  "output_tokens": 570,
+  "retries": 0
+}

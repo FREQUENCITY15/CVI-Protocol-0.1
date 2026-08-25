@@ -1,0 +1,102 @@
+{
+  "C-01": {
+    "features": {
+      "arith_op_count": 1,
+      "multi_statement": false,
+      "n_hidden_cases": 8,
+      "n_novel_op_tokens": 1,
+      "n_novel_ops": 1,
+      "n_public_cases": 4,
+      "nested_novel_expression": false,
+      "novel_ops": [
+        "SWIZZLE"
+      ],
+      "params": {
+        "k": 2,
+        "r1": "a",
+        "r2": "b"
+      },
+      "phrasing": 1,
+      "purity_trap": false,
+      "recipe": "swizzle_mul",
+      "starts_with_out": true,
+      "uses_queue_ops": false
+    },
+    "stratum_key": "swizzle_mul[k=2][phr=1]"
+  },
+  "C-02": {
+    "features": {
+      "arith_op_count": 1,
+      "multi_statement": false,
+      "n_hidden_cases": 8,
+      "n_novel_op_tokens": 1,
+      "n_novel_ops": 1,
+      "n_public_cases": 4,
+      "nested_novel_expression": false,
+      "novel_ops": [
+        "MIRROR"
+      ],
+      "params": {
+        "k": 2,
+        "r1": "a"
+      },
+      "phrasing": 1,
+      "purity_trap": true,
+      "recipe": "mirror_add",
+      "starts_with_out": true,
+      "uses_queue_ops": false
+    },
+    "stratum_key": "mirror_add[k=2][phr=1]"
+  },
+  "C-03": {
+    "features": {
+      "arith_op_count": 2,
+      "multi_statement": false,
+      "n_hidden_cases": 8,
+      "n_novel_op_tokens": 1,
+      "n_novel_ops": 1,
+      "n_public_cases": 4,
+      "nested_novel_expression": false,
+      "novel_ops": [
+        "SWIZZLE"
+      ],
+      "params": {
+        "k": 2,
+        "m": 1,
+        "r1": "a",
+        "r2": "b"
+      },
+      "phrasing": 1,
+      "purity_trap": false,
+      "recipe": "swizzle_mul_add",
+      "starts_with_out": true,
+      "uses_queue_ops": false
+    },
+    "stratum_key": "swizzle_mul_add[k=2][m=1][phr=1]"
+  },
+  "C-04": {
+    "features": {
+      "arith_op_count": 0,
+      "multi_statement": true,
+      "n_hidden_cases": 8,
+      "n_novel_op_tokens": 1,
+      "n_novel_ops": 1,
+      "n_public_cases": 4,
+      "nested_novel_expression": false,
+      "novel_ops": [
+        "SPLICE"
+      ],
+      "params": {
+        "mode": "drain",
+        "r1": "a",
+        "r2": "b"
+      },
+      "phrasing": 1,
+      "purity_trap": false,
+      "recipe": "splice_drain",
+      "starts_with_out": false,
+      "uses_queue_ops": true
+    },
+    "stratum_key": "splice_drain[mode=drain][phr=1]"
+  }
+}

@@ -1,0 +1,3 @@
+SET a MIRROR e
+ADD a 2
+OUT a

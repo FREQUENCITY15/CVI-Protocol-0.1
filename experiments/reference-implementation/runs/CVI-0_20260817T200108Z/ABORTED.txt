@@ -1,0 +1,1 @@
+pilot aborted by a checkpoint no-overwrite collision bug (fixed); preserved for transparency.

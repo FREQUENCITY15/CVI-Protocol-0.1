@@ -1,0 +1,5 @@
+SET c a
+SWIZZLE c b
+MUL c 3
+ADD c 2
+OUT c

@@ -1,0 +1,4 @@
+SET b HELIX a
+ADD b 1
+PUSH b
+DRAIN

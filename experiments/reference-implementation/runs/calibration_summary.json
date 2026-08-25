@@ -1,0 +1,17 @@
+{
+  "band": [
+    0.3,
+    0.8
+  ],
+  "chosen_tier": 2,
+  "history": [
+    {
+      "S0": 0.75,
+      "attempt": 1,
+      "run_dir": "calibration_1_20260817T195803Z",
+      "seed": 20260817101,
+      "tier": 2
+    }
+  ],
+  "note": "Calibration runs are pilot engineering evidence, not CVI results."
+}

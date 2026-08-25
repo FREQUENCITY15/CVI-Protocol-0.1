@@ -1,0 +1,50 @@
+Attempt each of the following tasks ONE time. Write one OrderMachine program per task. You will receive no feedback.
+
+
+## Task B-S1-01
+Start from the registers a and b. Use the SWIZZLE operator on these two registers. Whatever number the operator yields, scale it by a factor of 2, and emit that final number.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 244, "b": 99}, "queue": []} -> [196]
+  case 2: inputs {"registers": {"a": 86, "b": 86}, "queue": []} -> [170]
+  case 3: inputs {"registers": {"a": 25, "b": 68}, "queue": []} -> [134]
+  case 4: inputs {"registers": {"a": 64, "b": 73}, "queue": []} -> [144]
+
+## Task B-S1-02
+Consider the single register a. Run the MIRROR operation over it, then raise the number it hands back by 2. That increased number is what you should output.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 222}, "queue": []} -> [126]
+  case 2: inputs {"registers": {"a": 31}, "queue": []} -> [251]
+  case 3: inputs {"registers": {"a": 59}, "queue": []} -> [223]
+  case 4: inputs {"registers": {"a": 105}, "queue": []} -> [153]
+
+## Task B-S2-01
+Read registers c and d. Apply SWIZZLE to the pair (c, d). Take the value that SWIZZLE produces and multiply it by 2. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"c": 127, "d": 6}, "queue": []} -> [10]
+  case 2: inputs {"registers": {"c": 192, "d": 14}, "queue": []} -> [26]
+  case 3: inputs {"registers": {"c": 27, "d": 98}, "queue": []} -> [194]
+  case 4: inputs {"registers": {"c": 53, "d": 113}, "queue": []} -> [224]
+
+## Task B-S2-02
+Read register e. Apply MIRROR to it. Add 2 to the value that MIRROR produces. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"e": 221}, "queue": []} -> [190]
+  case 2: inputs {"registers": {"e": 182}, "queue": []} -> [112]
+  case 3: inputs {"registers": {"e": 99}, "queue": []} -> [201]
+  case 4: inputs {"registers": {"e": 139}, "queue": []} -> [212]
+
+## Task B-S3-01
+Read register a. Apply HELIX to it. Then apply FOLD to the value that HELIX produces. Add 2 to that. Output the result.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 180}, "queue": []} -> [19]
+  case 2: inputs {"registers": {"a": 8}, "queue": []} -> [11]
+  case 3: inputs {"registers": {"a": 155}, "queue": []} -> [14]
+  case 4: inputs {"registers": {"a": 224}, "queue": []} -> [26]
+
+## Task B-S3-02
+Read register a. Apply HELIX to it. Add 1 to the value that HELIX produces. Put the result onto the queue. Move the entire queue to the output, front to back.
+Worked examples (inputs -> expected output):
+  case 1: inputs {"registers": {"a": 165}, "queue": []} -> [78]
+  case 2: inputs {"registers": {"a": 225}, "queue": []} -> [198]
+  case 3: inputs {"registers": {"a": 234}, "queue": []} -> [216]
+  case 4: inputs {"registers": {"a": 231}, "queue": []} -> [210]

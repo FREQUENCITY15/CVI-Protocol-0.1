@@ -1,0 +1,24 @@
+ENVIRONMENT FEEDBACK — results of running your programs on the worked examples (this is the only information you will receive about your programs):
+
+A-01:
+  case 1: PASS
+  case 2: PASS
+  case 3: PASS
+  case 4: PASS
+A-02:
+  case 1: FAIL (wrong output)
+  case 2: FAIL (wrong output)
+  case 3: FAIL (wrong output)
+  case 4: FAIL (wrong output)
+A-03:
+  case 1: PASS
+  case 2: PASS
+  case 3: PASS
+  case 4: PASS
+A-04:
+  case 1: PASS
+  case 2: PASS
+  case 3: PASS
+  case 4: PASS
+
+Round 2/3: revise any failing programs and output all 4 programs again in the required format.

@@ -1,0 +1,22 @@
+{
+  "api_errors": [],
+  "cache_creation_tokens": 0,
+  "cache_read_tokens": 0,
+  "call_log": [
+    {
+      "cache_creation_tokens": 0,
+      "cache_read_tokens": 0,
+      "error": null,
+      "index": 1,
+      "input_tokens": 2185,
+      "label": "CAL:calibration:cal_1_tier2",
+      "latency_s": 157.071,
+      "model": "deepseek-v4-pro",
+      "output_tokens": 12000
+    }
+  ],
+  "calls": 1,
+  "input_tokens": 2185,
+  "output_tokens": 12000,
+  "retries": 0
+}
